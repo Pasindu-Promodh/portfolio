@@ -1,65 +1,4 @@
-// import { Box, Typography, Button } from '@mui/material';
-// import { styled } from '@mui/material/styles';
-// import { motion } from 'framer-motion';
-
-// const ArcadeHero = styled(Box)(({ theme }) => ({
-//   height: '100vh',
-//   display: 'flex',
-//   flexDirection: 'column',
-//   justifyContent: 'center',
-//   alignItems: 'center',
-//   background: '#1a1a1a',
-//   position: 'relative',
-//   overflow: 'hidden',
-//   '&:before': {
-//     content: '""',
-//     position: 'absolute',
-//     top: 0,
-//     left: 0,
-//     width: '100%',
-//     height: '100%',
-//     background: 'repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 3px)', // Scanlines
-//     pointerEvents: 'none',
-//   },
-// }));
-
-// const PixelTypography = styled(Typography)(({ theme }) => ({
-//   color: theme.palette.primary.main,
-//   textShadow: '0 0 10px #00ffcc, 0 0 20px #ff00ff',
-//   padding: '10px',
-// }));
-
-// function Home() {
-//   return (
-//     <ArcadeHero
-//       component={motion.div}
-//       initial={{ opacity: 0, y: 50 }}
-//       animate={{ opacity: 1, y: 0 }}
-//       transition={{ duration: 0.8 }}
-//     >
-//       <PixelTypography variant="h1">INSERT COIN TO PLAY</PixelTypography>
-//       <Typography
-//         variant="body1"
-//         sx={{ color: '#fff', mt: 2, maxWidth: 600, textAlign: 'center', fontFamily: 'Roboto' }}
-//       >
-//         I’m [Your Name], a game dev crafting pixel-perfect adventures and tech wizardry.
-//       </Typography>
-//       <Button
-//         variant="contained"
-//         color="primary"
-//         sx={{ mt: 4, fontFamily: 'Press Start 2P', padding: '10px 20px' }}
-//         href="/your-cv.pdf" // Update with your CV path
-//         download
-//       >
-//         GRAB CV
-//       </Button>
-//     </ArcadeHero>
-//   );
-// }
-
-// export default Home;
-
-import React from "react";
+import * as React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -71,8 +10,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Chip from "@mui/material/Chip";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import Fade from "@mui/material/Fade";
 import Slide from "@mui/material/Slide";
 import {
@@ -81,19 +18,13 @@ import {
   Email,
   PlayArrow,
   Code,
-  GamepadOutlined,
-  WebOutlined,
-  MobileOffOutlined,
   KeyboardArrowRight,
+  PhoneIphone,
+  Public,
+  SportsEsports,
 } from "@mui/icons-material";
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import PublicIcon from '@mui/icons-material/Public';
 
 const Home: React.FC = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
   const skills = [
     { name: "Unity", icon: "🎮", color: "#FF6B35" },
     { name: "React", icon: "⚛️", color: "#61DAFB" },
@@ -138,11 +69,11 @@ const Home: React.FC = () => {
   const getProjectIcon = (type: string) => {
     switch (type) {
       case "game":
-        return <SportsEsportsIcon />;
+        return <SportsEsports />;
       case "mobile":
-        return <PhoneIphoneIcon />;
+        return <PhoneIphone />;
       case "web":
-        return <PublicIcon />;
+        return <Public />;
       default:
         return <Code />;
     }
@@ -173,7 +104,7 @@ const Home: React.FC = () => {
         />
         <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2 }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Fade in timeout={1000}>
                 <Box>
                   <Typography
@@ -227,7 +158,7 @@ const Home: React.FC = () => {
                 </Box>
               </Fade>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Slide direction="left" in timeout={1200}>
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
                   <Avatar
@@ -264,7 +195,7 @@ const Home: React.FC = () => {
 
         <Grid container spacing={3}>
           {skills.map((skill, index) => (
-            <Grid item xs={6} sm={4} md={3} key={skill.name}>
+            <Grid size={{ xs: 6, sm: 4, md: 3 }} key={skill.name}>
               <Fade in timeout={800 + index * 100}>
                 <Card
                   sx={{
@@ -316,7 +247,7 @@ const Home: React.FC = () => {
 
           <Grid container spacing={4}>
             {projects.map((project, index) => (
-              <Grid item xs={12} md={4} key={project.title}>
+              <Grid size={{ xs: 12, md: 4 }} key={project.title}>
                 <Fade in timeout={1000 + index * 200}>
                   <Card
                     sx={{
