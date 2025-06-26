@@ -3,7 +3,7 @@ import Home from './pages/HomePage';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />

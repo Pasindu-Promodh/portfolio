@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  
   plugins: [react()],
+  base: '/',
   build: {
     rollupOptions: {
       maxParallelFileOps: 3, // Limit parallel file operations to avoid EMFILE errors
