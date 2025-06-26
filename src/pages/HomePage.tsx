@@ -124,7 +124,7 @@ const Home: React.FC = () => {
                     color="rgba(255,255,255,0.8)"
                     gutterBottom
                   >
-                    Hello, I'm
+                    Hello, I'm Pasindu Promod
                   </Typography>
                   <Typography variant="h2" fontWeight="bold" gutterBottom>
                     Game Developer & Software Engineer
