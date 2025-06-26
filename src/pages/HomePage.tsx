@@ -24,12 +24,17 @@ import {
   Public,
   SportsEsports,
 } from "@mui/icons-material";
+import { useEffect } from "react";
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
 
-  const handleViewWork = () => {
-    navigate('/work');
+  const gotoPage = (page: string) => {
+    navigate("/" + page);
   };
 
   const skills = [
@@ -139,7 +144,7 @@ const Home: React.FC = () => {
                       variant="contained"
                       size="large"
                       endIcon={<KeyboardArrowRight />}
-                      onClick={handleViewWork}
+                      onClick={() => gotoPage("work")}
                       sx={{
                         bgcolor: "white",
                         color: "primary.main",
@@ -322,7 +327,7 @@ const Home: React.FC = () => {
                         variant="text"
                         endIcon={<PlayArrow />}
                         sx={{ alignSelf: "flex-start" }}
-                        onClick={handleViewWork}
+                        onClick={() => gotoPage("work")}
                       >
                         View Project
                       </Button>
@@ -332,13 +337,13 @@ const Home: React.FC = () => {
               </Grid>
             ))}
           </Grid>
-          
+
           {/* View All Projects Button */}
           <Box sx={{ textAlign: "center", mt: 6 }}>
             <Button
               variant="contained"
               size="large"
-              onClick={handleViewWork}
+              onClick={() => gotoPage("work")}
               endIcon={<KeyboardArrowRight />}
               sx={{ px: 4, py: 1.5 }}
             >

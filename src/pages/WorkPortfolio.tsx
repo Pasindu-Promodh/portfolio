@@ -28,6 +28,8 @@ import {
   Download,
   ArrowBack,
 } from "@mui/icons-material";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Project {
   id: string;
@@ -51,6 +53,16 @@ interface Project {
 
 const WorkPortfolio: React.FC = () => {
   const [selectedTab, setSelectedTab] = React.useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const navigate = useNavigate();
+
+  const gotoPage = (page:string) => {
+    navigate("/" + page);
+  };
 
   const projects: Project[] = [
     {
@@ -191,7 +203,8 @@ const WorkPortfolio: React.FC = () => {
           <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
             <IconButton 
               sx={{ color: "white", mr: 2 }}
-              onClick={() => window.history.back()}
+              // onClick={() => window.history.back()}
+              onClick={() => gotoPage("")} // Navigate to home
             >
               <ArrowBack />
             </IconButton>
