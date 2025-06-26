@@ -226,7 +226,7 @@ const WorkPortfolio: React.FC = () => {
             variant="scrollable"
             scrollButtons="auto"
           >
-            {tabCategories.map((category, index) => (
+            {tabCategories.map((category) => (
               <Tab
                 key={category.value}
                 label={
