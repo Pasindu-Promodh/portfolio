@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -25,6 +26,12 @@ import {
 } from "@mui/icons-material";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleViewWork = () => {
+    navigate('/work');
+  };
+
   const skills = [
     { name: "Unity", icon: "🎮", color: "#FF6B35" },
     { name: "React", icon: "⚛️", color: "#61DAFB" },
@@ -132,6 +139,7 @@ const Home: React.FC = () => {
                       variant="contained"
                       size="large"
                       endIcon={<KeyboardArrowRight />}
+                      onClick={handleViewWork}
                       sx={{
                         bgcolor: "white",
                         color: "primary.main",
@@ -314,6 +322,7 @@ const Home: React.FC = () => {
                         variant="text"
                         endIcon={<PlayArrow />}
                         sx={{ alignSelf: "flex-start" }}
+                        onClick={handleViewWork}
                       >
                         View Project
                       </Button>
@@ -323,6 +332,19 @@ const Home: React.FC = () => {
               </Grid>
             ))}
           </Grid>
+          
+          {/* View All Projects Button */}
+          <Box sx={{ textAlign: "center", mt: 6 }}>
+            <Button
+              variant="contained"
+              size="large"
+              onClick={handleViewWork}
+              endIcon={<KeyboardArrowRight />}
+              sx={{ px: 4, py: 1.5 }}
+            >
+              View All Projects
+            </Button>
+          </Box>
         </Container>
       </Box>
 

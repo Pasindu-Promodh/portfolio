@@ -1,16 +1,35 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/HomePage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { ThemeProvider, createTheme } from '@mui/material/styles';
+// import CssBaseline from '@mui/material/CssBaseline';
+import Home from "./pages/HomePage";
+import Work from "./pages/WorkPortfolio";
+
+// const theme = createTheme({
+//   palette: {
+//     mode: 'light',
+//     primary: {
+//       main: '#667eea',
+//     },
+//     secondary: {
+//       main: '#764ba2',
+//     },
+//   },
+//   typography: {
+//     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+//   },
+// });
 
 function App() {
   return (
+    // <ThemeProvider theme={theme}>
+    //   <CssBaseline />
     <Router basename={import.meta.env.BASE_URL}>
-      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<div>Projects</div>} />
-        <Route path="/contact" element={<div>Contact</div>} />
+        <Route path="/work" element={<Work />} />
       </Routes>
     </Router>
+    // </ThemeProvider>
   );
 }
 
