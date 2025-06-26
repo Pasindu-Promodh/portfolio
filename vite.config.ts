@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   
   plugins: [react()],
-  base: '/',
+  base: '/portfolio/',
   build: {
     rollupOptions: {
       maxParallelFileOps: 3, // Limit parallel file operations to avoid EMFILE errors
