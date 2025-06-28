@@ -25,6 +25,8 @@ import {
   SportsEsports,
 } from "@mui/icons-material";
 import { useEffect } from "react";
+// Import your projects data
+import projects from "../data/projects.json";
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -46,36 +48,6 @@ const Home: React.FC = () => {
     { name: "Construct 2", icon: "🛠️", color: "#4CAF50" },
     { name: "HTML/CSS", icon: "🌐", color: "#E34F26" },
     { name: "MUI", icon: "🎨", color: "#007FFF" },
-  ];
-
-  const projects = [
-    {
-      title: "Indie Adventure Game",
-      description:
-        "A 2D platformer built with Unity featuring custom physics and procedural level generation.",
-      image:
-        "https://i.guim.co.uk/img/media/c6f7b43fa821d06fe1ab4311e558686529931492/168_84_1060_636/master/1060.jpg?width=1200&quality=85&auto=format&fit=max&s=5c5b07b8cc96af633881fb903fb14a83",
-      tags: ["Unity", "C#", "Game Design"],
-      type: "game",
-    },
-    {
-      title: "Cross-Platform Mobile App",
-      description:
-        "React Native app with real-time features and custom animations.",
-      image:
-        "https://i.guim.co.uk/img/media/c6f7b43fa821d06fe1ab4311e558686529931492/168_84_1060_636/master/1060.jpg?width=1200&quality=85&auto=format&fit=max&s=5c5b07b8cc96af633881fb903fb14a83",
-      tags: ["React Native", "TypeScript", "Firebase"],
-      type: "mobile",
-    },
-    {
-      title: "Web Dashboard",
-      description:
-        "Modern admin dashboard with data visualization and responsive design.",
-      image:
-        "https://i.guim.co.uk/img/media/c6f7b43fa821d06fe1ab4311e558686529931492/168_84_1060_636/master/1060.jpg?width=1200&quality=85&auto=format&fit=max&s=5c5b07b8cc96af633881fb903fb14a83",
-      tags: ["React", "MUI", "TypeScript"],
-      type: "web",
-    },
   ];
 
   const getProjectIcon = (type: string) => {

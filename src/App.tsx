@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import CssBaseline from '@mui/material/CssBaseline';
 import Home from "./pages/HomePage";
 import Work from "./pages/WorkPortfolio";
+import ProjectDetail from "./pages/ProjectDetail";
 
 // const theme = createTheme({
 //   palette: {
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/project/:id" element={<ProjectDetail />} />
       </Routes>
     </Router>
     // </ThemeProvider>

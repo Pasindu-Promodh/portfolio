@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "title": "Mystic Realms",
+    "description": "A 2D adventure RPG with procedural dungeon generation",
+    "longDescription": "An immersive 2D adventure RPG built with Unity featuring custom physics engine, procedural dungeon generation, dynamic lighting system, and original soundtrack. Players explore mystical realms, battle creatures, and uncover ancient secrets in this pixel-art masterpiece. The game offers endless replayability with its randomized dungeons and a rich lore to discover. With intuitive controls and challenging boss battles, Mystic Realms provides a truly engaging fantasy adventure. Future updates will include multiplayer capabilities and additional content packs.",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&h=600&fit=crop",
+    "tags": ["Unity", "C#", "Game Design", "Pixel Art", "Audio", "Procedural Generation", "RPG"],
+    "type": "game",
+    "status": "completed",
+    "featured": true,
+    "github": "https://github.com/username/mystic-realms",
+    "demo": "https://play.unity.com/mg/other/mystic-realms",
+    "download": "https://itch.io/mystic-realms",
+    "media" : [
+      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop"
+    ],
+    "stats": { "stars": 245, "downloads": 12000, "views": 45000 }
+  },
+  {
+    "id": "2",
+    "title": "TaskFlow Mobile",
+    "description": "Cross-platform productivity app with real-time collaboration",
+    "longDescription": "A comprehensive task management application built with React Native and TypeScript. Features real-time collaboration, offline sync, custom animations, push notifications, and intelligent task prioritization using machine learning algorithms. TaskFlow Mobile aims to revolutionize how teams manage their daily tasks, offering a seamless and intuitive user experience. It integrates with popular calendar apps and provides detailed analytics on productivity trends.",
+    "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
+    "tags": ["React Native", "TypeScript", "Firebase", "Machine Learning", "UX/UI", "Mobile Development", "Productivity"],
+    "type": "mobile",
+    "status": "completed",
+    "featured": true,
+    "github": "https://github.com/username/taskflow-mobile",
+    "demo": "https://expo.dev/@username/taskflow",
+    "stats": { "stars": 180, "downloads": 8500 }
+  },
+  {
+    "id": "3",
+    "title": "Analytics Dashboard Pro",
+    "description": "Modern data visualization dashboard with real-time updates",
+    "longDescription": "A sophisticated analytics dashboard built with React, TypeScript, and MUI. Features real-time data visualization, customizable widgets, advanced filtering, export capabilities, and responsive design that works seamlessly across all devices. This dashboard is ideal for businesses needing quick insights into their data, offering powerful charting options with D3.js and WebSocket integration for live updates. It's designed for scalability and easy integration with existing data sources.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
+    "tags": ["React", "TypeScript", "MUI", "D3.js", "WebSockets", "Data Viz", "Dashboard", "Real-time"],
+    "type": "web",
+    "status": "completed",
+    "featured": true,
+    "github": "https://github.com/username/analytics-dashboard",
+    "demo": "https://analytics-dashboard-pro.vercel.app",
+    "stats": { "stars": 320, "views": 25000 }
+  },
+  {
+    "id": "4",
+    "title": "Retro Arcade Collection",
+    "description": "HTML5 games built with Construct 2 engine",
+    "longDescription": "A collection of classic arcade-style games recreated using Construct 2. Includes Pac-Man inspired maze runner, Tetris-like puzzle game, and Space Invaders clone. All games feature modern graphics, sound effects, and mobile-responsive controls, providing a nostalgic yet fresh gaming experience directly in your browser. Each game is meticulously crafted to retain the charm of the originals while introducing quality-of-life improvements.",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=600&fit=crop",
+    "tags": ["Construct 2", "HTML5", "Game Design", "Retro Gaming", "Arcade"],
+    "type": "game",
+    "status": "completed",
+    "featured": false,
+    "demo": "https://retro-arcade-collection.netlify.app",
+    "stats": { "views": 15000 }
+  },
+  {
+    "id": "5",
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce solution with admin panel",
+    "longDescription": "A complete e-commerce platform built with React frontend and Java Spring Boot backend. Features product catalog, shopping cart, payment integration, order management, inventory tracking, and comprehensive admin dashboard. This scalable solution is designed for small to medium businesses looking to establish a robust online presence. It includes secure user authentication, order fulfillment workflows, and detailed sales reports.",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop",
+    "tags": ["React", "Java", "Spring Boot", "MySQL", "Stripe", "Admin Panel", "E-commerce", "Full-stack"],
+    "type": "web",
+    "status": "completed",
+    "featured": false,
+    "github": "https://github.com/username/ecommerce-platform",
+    "demo": "https://ecommerce-demo.herokuapp.com",
+    "stats": { "stars": 95, "views": 8000 }
+  },
+  {
+    "id": "6",
+    "title": "AR Furniture Visualizer",
+    "description": "Augmented reality app for furniture placement",
+    "longDescription": "An innovative AR application built with Unity and ARCore/ARKit that allows users to visualize furniture in their real-world environment. Features 3D model library, realistic lighting, measurement tools, and social sharing capabilities. This app transforms the furniture shopping experience by letting users 'try before they buy' directly in their homes, ensuring a perfect fit and aesthetic match.",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=600&fit=crop",
+    "tags": ["Unity", "AR", "C#", "ARCore", "ARKit", "3D Modeling", "Augmented Reality"],
+    "type": "mobile",
+    "status": "in-progress",
+    "featured": true,
+    "github": "https://github.com/username/ar-furniture",
+    "stats": { "stars": 150 }
+  }
+]
