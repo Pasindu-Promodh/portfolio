@@ -1,0 +1,15 @@
+[
+  { "name": "Unity", "icon": "🎮", "category": "Game Engine" },
+  { "name": "Unreal", "icon": "🧠", "category": "Game Engine" },
+  { "name": "C#", "icon": "💻", "category": "Programming" },
+  { "name": "Visual Scripting", "icon": "🧩", "category": "Programming" },
+  { "name": "UI/UX", "icon": "🎨", "category": "Design" },
+  { "name": "VFX", "icon": "✨", "category": "Visual Effects" },
+  { "name": "Git", "icon": "🔧", "category": "Tools" },
+  { "name": "Unity Gaming Services", "icon": "☁️", "category": "Tools" },
+  { "name": "IronSource (LevelPlay)", "icon": "📊", "category": "Monetization" },
+  { "name": "3D Modeling", "icon": "🧊", "category": "Art" },
+  { "name": "Quest Systems", "icon": "🗺️", "category": "Game Systems" },
+  { "name": "Cross-Platform Integration", "icon": "📱", "category": "Development" },
+  { "name": "Hyper-Casual & RPG Mechanics", "icon": "🕹️", "category": "Game Design" }
+]

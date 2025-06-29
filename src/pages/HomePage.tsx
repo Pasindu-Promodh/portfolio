@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -27,28 +27,25 @@ import {
 import { useEffect } from "react";
 // Import your projects data
 import projects from "../data/projects.json";
+import skills from "../data/skills.json";
+import { Snackbar } from "@mui/material";
 
 const Home: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const navigate = useNavigate();
+  const location = useLocation();
+  const scrollPos = location.state?.scrollPos;
+
+  const [copied, setCopied] = React.useState(false);
+
+  useEffect(() => {
+    if (typeof scrollPos === "number") {
+      window.scrollTo(0, scrollPos);
+    }
+  }, [scrollPos]);
 
   const gotoPage = (page: string) => {
     navigate("/" + page);
   };
-
-  const skills = [
-    { name: "Unity", icon: "🎮", color: "#FF6B35" },
-    { name: "React", icon: "⚛️", color: "#61DAFB" },
-    { name: "React Native", icon: "📱", color: "#61DAFB" },
-    { name: "TypeScript", icon: "📘", color: "#3178C6" },
-    { name: "Java", icon: "☕", color: "#ED8B00" },
-    { name: "Construct 2", icon: "🛠️", color: "#4CAF50" },
-    { name: "HTML/CSS", icon: "🌐", color: "#E34F26" },
-    { name: "MUI", icon: "🎨", color: "#007FFF" },
-  ];
 
   const getProjectIcon = (type: string) => {
     switch (type) {
@@ -96,18 +93,18 @@ const Home: React.FC = () => {
                     color="rgba(255,255,255,0.8)"
                     gutterBottom
                   >
-                    Hello, I'm Pasindu Promod
+                    Hello, I'm Maneesha Goonetilleke
                   </Typography>
                   <Typography variant="h2" fontWeight="bold" gutterBottom>
-                    Game Developer & Software Engineer
+                    Game Developer & Technical Artist
                   </Typography>
                   <Typography
                     variant="h5"
                     color="rgba(255,255,255,0.9)"
                     paragraph
                   >
-                    Crafting immersive gaming experiences and robust software
-                    solutions
+                    Crafting immersive games, 3D models, and visual effects that
+                    blend creativity with technical skill.
                   </Typography>
                   <Box
                     sx={{ mt: 4, display: "flex", gap: 2, flexWrap: "wrap" }}
@@ -147,15 +144,14 @@ const Home: React.FC = () => {
               <Slide direction="left" in timeout={1200}>
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
                   <Avatar
+                    src="https://media.licdn.com/dms/image/v2/D5603AQGvGYe0q9xbIQ/profile-displayphoto-shrink_800_800/B56ZOVIrHDGoAc-/0/1733373900788?e=1756944000&v=beta&t=ZPQn5y_TtJFhq7DgO89uQo4Ib8oh6O7tFCZFcP7ApkE"
                     sx={{
                       width: 200,
                       height: 200,
                       border: "4px solid rgba(255,255,255,0.3)",
                       boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
                     }}
-                  >
-                    <Typography variant="h1">👨‍💻</Typography>
-                  </Avatar>
+                  />
                 </Box>
               </Slide>
             </Grid>
@@ -346,6 +342,10 @@ const Home: React.FC = () => {
             <IconButton
               color="primary"
               size="large"
+              onClick={() => {
+                navigator.clipboard.writeText("maneegoon@gmail.com");
+                setCopied(true);
+              }}
               sx={{
                 bgcolor: "primary.main",
                 color: "white",
@@ -354,9 +354,13 @@ const Home: React.FC = () => {
             >
               <Email />
             </IconButton>
+
             <IconButton
               color="primary"
               size="large"
+              href="https://www.linkedin.com/in/manee8/"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 bgcolor: "#0077B5",
                 color: "white",
@@ -368,6 +372,9 @@ const Home: React.FC = () => {
             <IconButton
               color="primary"
               size="large"
+              href="https://github.com/ManeeshaG1"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 bgcolor: "#333",
                 color: "white",
@@ -377,15 +384,21 @@ const Home: React.FC = () => {
               <GitHub />
             </IconButton>
           </Box>
-
-          <Button
+          {/*<Button
             variant="contained"
             size="large"
             sx={{ px: 4, py: 1.5, fontSize: "1.1rem" }}
           >
             Get In Touch
-          </Button>
+          </Button> */}
         </Box>
+        <Snackbar
+          open={copied}
+          autoHideDuration={3000}
+          onClose={() => setCopied(false)}
+          message="Email copied to clipboard!"
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        />
       </Container>
     </Box>
   );

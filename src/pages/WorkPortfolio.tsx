@@ -35,9 +35,9 @@ const WorkPortfolio: React.FC = () => {
 
   const navigate = useNavigate();
 
-  const gotoPage = (page: string, id?: string) => {
+  const gotoPage = (page: string, id?: string, scrollPos?: number) => {
     const url = id ? `${page}/${id}` : page;
-    navigate(url);
+    navigate(url, { state: { scrollPos } });
   };
 
   const tabCategories = [
@@ -136,13 +136,12 @@ const WorkPortfolio: React.FC = () => {
                 My Work Portfolio
               </Typography>
               <Typography variant="h5" color="rgba(255,255,255,0.9)" paragraph>
-                A collection of games, mobile apps, and web applications I've
-                built
+                A collection of games, 3D models, and visual effects I've built
               </Typography>
               <Typography variant="body1" color="rgba(255,255,255,0.8)">
-                From immersive gaming experiences to practical software
-                solutions, each project represents my passion for creating
-                meaningful digital experiences.
+                From immersive visuals to interactive gameplay, each project
+                reflects my passion for creating engaging and polished digital
+                experiences.
               </Typography>
             </Box>
           </Fade>
@@ -304,6 +303,7 @@ const WorkPortfolio: React.FC = () => {
               variant="contained"
               size="large"
               sx={{ px: 4, py: 1.5, fontSize: "1.1rem" }}
+              onClick={() => gotoPage("/", undefined, 99999)}
             >
               Get In Touch
             </Button>
