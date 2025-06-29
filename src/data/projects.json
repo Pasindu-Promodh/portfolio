@@ -15,8 +15,7 @@
     "media" : [
       "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop"
-    ],
-    "stats": { "stars": 245, "downloads": 12000, "views": 45000 }
+    ]
   },
   {
     "id": "2",
@@ -29,8 +28,7 @@
     "status": "completed",
     "featured": true,
     "github": "https://github.com/username/taskflow-mobile",
-    "demo": "https://expo.dev/@username/taskflow",
-    "stats": { "stars": 180, "downloads": 8500 }
+    "demo": "https://expo.dev/@username/taskflow"
   },
   {
     "id": "3",
@@ -43,8 +41,7 @@
     "status": "completed",
     "featured": true,
     "github": "https://github.com/username/analytics-dashboard",
-    "demo": "https://analytics-dashboard-pro.vercel.app",
-    "stats": { "stars": 320, "views": 25000 }
+    "demo": "https://analytics-dashboard-pro.vercel.app"
   },
   {
     "id": "4",
@@ -56,8 +53,7 @@
     "type": "game",
     "status": "completed",
     "featured": false,
-    "demo": "https://retro-arcade-collection.netlify.app",
-    "stats": { "views": 15000 }
+    "demo": "https://retro-arcade-collection.netlify.app"
   },
   {
     "id": "5",
@@ -70,8 +66,7 @@
     "status": "completed",
     "featured": false,
     "github": "https://github.com/username/ecommerce-platform",
-    "demo": "https://ecommerce-demo.herokuapp.com",
-    "stats": { "stars": 95, "views": 8000 }
+    "demo": "https://ecommerce-demo.herokuapp.com"
   },
   {
     "id": "6",
@@ -83,7 +78,6 @@
     "type": "mobile",
     "status": "in-progress",
     "featured": true,
-    "github": "https://github.com/username/ar-furniture",
-    "stats": { "stars": 150 }
+    "github": "https://github.com/username/ar-furniture"
   }
 ]

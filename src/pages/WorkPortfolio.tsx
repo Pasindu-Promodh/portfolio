@@ -14,17 +14,13 @@ import Fade from "@mui/material/Fade";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Badge from "@mui/material/Badge";
-import {
-  Code,
-  SportsEsports,
-  PhoneIphone,
-  Public,
-  Star,
-  ArrowBack,
-} from "@mui/icons-material";
+import { Code, Star, ArrowBack } from "@mui/icons-material";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
+// Import your projects data
 import projects from "../data/projects.json";
+import projectMeta from "../data/projectMeta";
 
 const WorkPortfolio: React.FC = () => {
   const [selectedTab, setSelectedTab] = React.useState(0);
@@ -40,24 +36,17 @@ const WorkPortfolio: React.FC = () => {
     navigate(url, { state: { scrollPos } });
   };
 
-  const tabCategories = [
-    { label: "All Projects", value: "all", count: projects.length },
-    {
-      label: "Games",
-      value: "game",
-      count: projects.filter((p) => p.type === "game").length,
-    },
-    {
-      label: "Mobile Apps",
-      value: "mobile",
-      count: projects.filter((p) => p.type === "mobile").length,
-    },
-    {
-      label: "Web Apps",
-      value: "web",
-      count: projects.filter((p) => p.type === "web").length,
-    },
-  ];
+  const tabCategories = projectMeta
+    .filter((meta) => meta.includeInTabs)
+    .map((meta) => ({
+      label: meta.label,
+      value: meta.value,
+      icon: meta.icon,
+      count:
+        meta.value === "all"
+          ? projects.length
+          : projects.filter((p) => p.type === meta.value).length,
+    }));
 
   const filteredProjects =
     selectedTab === 0
@@ -67,16 +56,8 @@ const WorkPortfolio: React.FC = () => {
         );
 
   const getProjectIcon = (type: string) => {
-    switch (type) {
-      case "game":
-        return <SportsEsports />;
-      case "mobile":
-        return <PhoneIphone />;
-      case "web":
-        return <Public />;
-      default:
-        return <Code />;
-    }
+    const match = projectMeta.find((meta) => meta.value === type);
+    return match?.icon || <Code />;
   };
 
   const getStatusColor = (status: string) => {

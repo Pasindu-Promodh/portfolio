@@ -18,17 +18,16 @@ import {
   LinkedIn,
   Email,
   PlayArrow,
-  Code,
   KeyboardArrowRight,
-  PhoneIphone,
-  Public,
-  SportsEsports,
+  Code,
 } from "@mui/icons-material";
 import { useEffect } from "react";
+import { Snackbar } from "@mui/material";
+
 // Import your projects data
 import projects from "../data/projects.json";
 import skills from "../data/skills.json";
-import { Snackbar } from "@mui/material";
+import projectMeta from "../data/projectMeta";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -48,16 +47,8 @@ const Home: React.FC = () => {
   };
 
   const getProjectIcon = (type: string) => {
-    switch (type) {
-      case "game":
-        return <SportsEsports />;
-      case "mobile":
-        return <PhoneIphone />;
-      case "web":
-        return <Public />;
-      default:
-        return <Code />;
-    }
+    const match = projectMeta.find((meta) => meta.value === type);
+    return match?.icon || <Code />;
   };
 
   return (
@@ -150,6 +141,10 @@ const Home: React.FC = () => {
                       height: 200,
                       border: "4px solid rgba(255,255,255,0.3)",
                       boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
+                      transition: "transform 0.3s ease-in-out",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                      },
                     }}
                   />
                 </Box>

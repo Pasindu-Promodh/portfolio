@@ -33,9 +33,6 @@ const ProjectDetail: React.FC = () => {
   const [fullscreenImage, setFullscreenImage] = React.useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
-  // Access the imported projects data directly
-//   const projects: Project[] = projectsData as Project[];
-
   // Find the project based on the ID from URL parameters
   const project = projects.find((p) => p.id === id);
 
