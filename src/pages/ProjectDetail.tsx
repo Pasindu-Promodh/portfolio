@@ -30,8 +30,10 @@ import projects from "../data/projects.json";
 const ProjectDetail: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  
-  const [fullscreenImage, setFullscreenImage] = React.useState<string | null>(null);
+
+  const [fullscreenImage, setFullscreenImage] = React.useState<string | null>(
+    null
+  );
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
   // Find the project based on the ID from URL parameters
@@ -65,28 +67,40 @@ const ProjectDetail: React.FC = () => {
 
   const getProjectIcon = (type: string) => {
     switch (type) {
-      case "game": return <SportsEsports sx={{ fontSize: "2rem" }} />;
-      case "mobile": return <PhoneIphone sx={{ fontSize: "2rem" }} />;
-      case "web": return <Public sx={{ fontSize: "2rem" }} />;
-      default: return <Code sx={{ fontSize: "2rem" }} />;
+      case "game":
+        return <SportsEsports sx={{ fontSize: "2rem" }} />;
+      case "mobile":
+        return <PhoneIphone sx={{ fontSize: "2rem" }} />;
+      case "web":
+        return <Public sx={{ fontSize: "2rem" }} />;
+      default:
+        return <Code sx={{ fontSize: "2rem" }} />;
     }
   };
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case "completed": return "success";
-      case "in-progress": return "warning";
-      case "concept": return "info";
-      default: return "default";
+      case "completed":
+        return "success";
+      case "in-progress":
+        return "warning";
+      case "concept":
+        return "info";
+      default:
+        return "default";
     }
   };
 
   const getStatusLabel = (status: string) => {
     switch (status) {
-      case "completed": return "Completed";
-      case "in-progress": return "In Progress";
-      case "concept": return "Concept";
-      default: return status;
+      case "completed":
+        return "Completed";
+      case "in-progress":
+        return "In Progress";
+      case "concept":
+        return "Concept";
+      default:
+        return status;
     }
   };
 
@@ -94,7 +108,7 @@ const ProjectDetail: React.FC = () => {
   const allMedia = [project.image, ...(project.media || [])];
 
   const openFullscreen = (imageSrc: string) => {
-    const imageIndex = allMedia.findIndex(media => media === imageSrc);
+    const imageIndex = allMedia.findIndex((media) => media === imageSrc);
     setCurrentImageIndex(imageIndex);
     setFullscreenImage(imageSrc);
   };
@@ -104,13 +118,15 @@ const ProjectDetail: React.FC = () => {
   };
 
   const goToPrevImage = () => {
-    const prevIndex = currentImageIndex === 0 ? allMedia.length - 1 : currentImageIndex - 1;
+    const prevIndex =
+      currentImageIndex === 0 ? allMedia.length - 1 : currentImageIndex - 1;
     setCurrentImageIndex(prevIndex);
     setFullscreenImage(allMedia[prevIndex]);
   };
 
   const goToNextImage = () => {
-    const nextIndex = currentImageIndex === allMedia.length - 1 ? 0 : currentImageIndex + 1;
+    const nextIndex =
+      currentImageIndex === allMedia.length - 1 ? 0 : currentImageIndex + 1;
     setCurrentImageIndex(nextIndex);
     setFullscreenImage(allMedia[nextIndex]);
   };
@@ -118,18 +134,18 @@ const ProjectDetail: React.FC = () => {
   // Handle escape key to close fullscreen and arrow keys for navigation
   React.useEffect(() => {
     const handleKeydown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         closeFullscreen();
-      } else if (event.key === 'ArrowLeft') {
+      } else if (event.key === "ArrowLeft") {
         goToPrevImage();
-      } else if (event.key === 'ArrowRight') {
+      } else if (event.key === "ArrowRight") {
         goToNextImage();
       }
     };
 
     if (fullscreenImage) {
-      document.addEventListener('keydown', handleKeydown);
-      return () => document.removeEventListener('keydown', handleKeydown);
+      document.addEventListener("keydown", handleKeydown);
+      return () => document.removeEventListener("keydown", handleKeydown);
     }
   }, [fullscreenImage, currentImageIndex, allMedia]);
 
@@ -170,16 +186,24 @@ const ProjectDetail: React.FC = () => {
       <Container maxWidth="lg" sx={{ py: 6 }}>
         <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
           {/* Main Image with Featured Tag */}
-          <Box sx={{ position: "relative", mb: 4, overflow: "hidden", borderRadius: 1 }}>
+          <Box
+            sx={{
+              position: "relative",
+              mb: 4,
+              overflow: "hidden",
+              borderRadius: 1,
+            }}
+          >
             <Box
               component="img"
               src={project.image}
               alt={project.title}
               sx={{
                 width: "100%",
-                height: { xs: 200, sm: 300, md: 400 },
+                // height: { xs: 200, sm: 300, md: 400 },
+                aspectRatio: "16/6",
                 objectFit: "cover",
-                borderRadius: 1,
+                display: "block",
                 cursor: "pointer",
                 transition: "transform 0.3s ease-in-out",
                 "&:hover": {
@@ -212,23 +236,24 @@ const ProjectDetail: React.FC = () => {
               <Typography variant="h6" fontWeight="bold" sx={{ mb: 2 }}>
                 Media Gallery
               </Typography>
-              <Box 
-                sx={{ 
-                  display: "flex", 
-                  flexWrap: "wrap", 
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
                   gap: 2,
-                  justifyContent: { xs: "center", sm: "flex-start" }
+                  justifyContent: { xs: "center", sm: "flex-start" },
                 }}
               >
                 {allMedia.map((mediaSrc, index) => (
                   <Box
                     key={index}
-                    component="img"
+                    component={mediaSrc.endsWith(".mp4") ? "video" : "img"}
                     src={mediaSrc}
                     alt={`${project.title} - Image ${index + 1}`}
                     sx={{
                       width: { xs: 80, sm: 100, md: 120 },
-                      height: { xs: 60, sm: 75, md: 90 },
+                      // height: { xs: 60, sm: 75, md: 90 },
+                      aspectRatio: "16/9",
                       objectFit: "cover",
                       borderRadius: 1,
                       cursor: "pointer",
@@ -254,7 +279,12 @@ const ProjectDetail: React.FC = () => {
             </Typography>
           </Box>
 
-          <Typography variant="body1" color="text.primary" paragraph sx={{ lineHeight: 1.8 }}>
+          <Typography
+            variant="body1"
+            color="text.primary"
+            paragraph
+            sx={{ lineHeight: 1.8 }}
+          >
             {project.longDescription}
           </Typography>
 
@@ -407,18 +437,34 @@ const ProjectDetail: React.FC = () => {
           )}
 
           {/* Main Image */}
-          <Box
-            component="img"
-            src={fullscreenImage}
-            alt="Fullscreen view"
-            sx={{
-              maxWidth: "90vw",
-              maxHeight: "90vh",
-              objectFit: "contain",
-              borderRadius: 1,
-            }}
-            onClick={(e) => e.stopPropagation()}
-          />
+          {fullscreenImage.endsWith(".mp4") ? (
+            <Box
+              component="video"
+              src={fullscreenImage}
+              controls
+              autoPlay
+              sx={{
+                maxWidth: "90vw",
+                maxHeight: "90vh",
+                // borderRadius: 1,
+                backgroundColor: "black",
+              }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          ) : (
+            <Box
+              component="img"
+              src={fullscreenImage}
+              alt="Fullscreen view"
+              sx={{
+                maxWidth: "90vw",
+                maxHeight: "90vh",
+                objectFit: "contain",
+                // borderRadius: 1,
+              }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          )}
 
           {/* Image Counter */}
           {allMedia.length > 1 && (
@@ -451,8 +497,14 @@ const ProjectDetail: React.FC = () => {
             <Typography variant="h4" gutterBottom fontWeight="bold">
               Interested in Working Together?
             </Typography>
-            <Typography variant="h6" color="text.secondary" paragraph sx={{ mb: 4 }}>
-              I'm always excited to take on new challenges and create amazing experiences.
+            <Typography
+              variant="h6"
+              color="text.secondary"
+              paragraph
+              sx={{ mb: 4 }}
+            >
+              I'm always excited to take on new challenges and create amazing
+              experiences.
             </Typography>
             <Button
               variant="contained"

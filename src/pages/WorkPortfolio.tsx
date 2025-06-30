@@ -26,14 +26,14 @@ const WorkPortfolio: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const scrollPos = location.state?.scrollPos;
-  
+
   const [selectedTab, setSelectedTab] = React.useState(0);
 
-   useEffect(() => {
-      if (typeof scrollPos === "number") {
-        window.scrollTo(0, scrollPos);
-      }
-    }, [scrollPos]);
+  useEffect(() => {
+    if (typeof scrollPos === "number") {
+      window.scrollTo(0, scrollPos);
+    }
+  }, [scrollPos]);
 
   const tabCategories = projectMeta
     .filter((meta) => meta.includeInTabs)
@@ -173,7 +173,7 @@ const WorkPortfolio: React.FC = () => {
                       flexDirection: "column",
                       position: "relative",
                       boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
-                      transition: "transform 0.3s, box-shadow 0.3s",
+                      transition: "transform 0.3s ease, box-shadow 0.3s",
                       "&:hover": {
                         transform: "translateY(-8px)",
                         boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
@@ -200,7 +200,10 @@ const WorkPortfolio: React.FC = () => {
 
                     <CardMedia
                       component="img"
-                      height="200"
+                      // height="200"
+                      sx={{
+                        aspectRatio: "16/9",
+                      }}
                       image={project.image}
                       alt={project.title}
                     />

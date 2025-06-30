@@ -239,7 +239,10 @@ const Home: React.FC = () => {
                   >
                     <CardMedia
                       component="img"
-                      height="200"
+                      // height="200"
+                      sx={{
+                        aspectRatio: "16/9",
+                      }}
                       image={project.image}
                       alt={project.title}
                     />
