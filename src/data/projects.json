@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "title": "Fluffy's Flight",
     "description": "Endless arcade game featuring a baby parrot's descent",
     "longDescription": "Fluffy's Flight takes you on a captivating journey with Fluffy, the cutest baby parrot, as it braves its first descent from the tallest tree. Struggling with a fear of heights, Fluffy needs your help to navigate down the tree safely. Swipe left or right to rotate the tree and create safe paths for Fluffy to bounce through, avoiding dangerous broken bricks.\n\nIn this charming arcade adventure, your objective is to keep Fluffy safe for as long as possible, collecting special power-ups and coins along the way. The further Fluffy descends, the higher your score climbs. Encounter unique challenges like broken bricks and tricky gaps that will test your reflexes and strategy.\n\nWith endless gameplay, vibrant graphics, and soothing music, \"Fluffy's Flight\" offers an immersive experience that will keep you engaged for hours. Aim to beat your previous high scores and enjoy the adorable visuals of Fluffy's journey. Perfect for players of all ages, \"Fluffy's Flight\" combines skill and charm in a delightful and addictive game. Download now and help Fluffy take its first flight!",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": 2,
     "title": "TaskFlow Mobile",
     "description": "Cross-platform productivity app with real-time collaboration",
     "longDescription": "A comprehensive task management application built with React Native and TypeScript. Features real-time collaboration, offline sync, custom animations, push notifications, and intelligent task prioritization using machine learning algorithms. TaskFlow Mobile aims to revolutionize how teams manage their daily tasks, offering a seamless and intuitive user experience. It integrates with popular calendar apps and provides detailed analytics on productivity trends.",
@@ -31,7 +31,7 @@
     "demo": "https://expo.dev/@username/taskflow"
   },
   {
-    "id": "3",
+    "id": 3,
     "title": "Analytics Dashboard Pro",
     "description": "Modern data visualization dashboard with real-time updates",
     "longDescription": "A sophisticated analytics dashboard built with React, TypeScript, and MUI. Features real-time data visualization, customizable widgets, advanced filtering, export capabilities, and responsive design that works seamlessly across all devices. This dashboard is ideal for businesses needing quick insights into their data, offering powerful charting options with D3.js and WebSocket integration for live updates. It's designed for scalability and easy integration with existing data sources.",
@@ -44,7 +44,7 @@
     "demo": "https://analytics-dashboard-pro.vercel.app"
   },
   {
-    "id": "4",
+    "id": 4,
     "title": "Retro Arcade Collection",
     "description": "HTML5 games built with Construct 2 engine",
     "longDescription": "A collection of classic arcade-style games recreated using Construct 2. Includes Pac-Man inspired maze runner, Tetris-like puzzle game, and Space Invaders clone. All games feature modern graphics, sound effects, and mobile-responsive controls, providing a nostalgic yet fresh gaming experience directly in your browser. Each game is meticulously crafted to retain the charm of the originals while introducing quality-of-life improvements.",
@@ -56,7 +56,7 @@
     "demo": "https://retro-arcade-collection.netlify.app"
   },
   {
-    "id": "5",
+    "id": 5,
     "title": "E-Commerce Platform",
     "description": "Full-stack e-commerce solution with admin panel",
     "longDescription": "A complete e-commerce platform built with React frontend and Java Spring Boot backend. Features product catalog, shopping cart, payment integration, order management, inventory tracking, and comprehensive admin dashboard. This scalable solution is designed for small to medium businesses looking to establish a robust online presence. It includes secure user authentication, order fulfillment workflows, and detailed sales reports.",
@@ -69,7 +69,7 @@
     "demo": "https://ecommerce-demo.herokuapp.com"
   },
   {
-    "id": "6",
+    "id": 6,
     "title": "AR Furniture Visualizer",
     "description": "Augmented reality app for furniture placement",
     "longDescription": "An innovative AR application built with Unity and ARCore/ARKit that allows users to visualize furniture in their real-world environment. Features 3D model library, realistic lighting, measurement tools, and social sharing capabilities. This app transforms the furniture shopping experience by letting users 'try before they buy' directly in their homes, ensuring a perfect fit and aesthetic match.",
