@@ -30,15 +30,21 @@ import projects from "../data/projects.json";
 const ProjectDetail: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  
   const [fullscreenImage, setFullscreenImage] = React.useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
   // Find the project based on the ID from URL parameters
-  const project = projects.find((p) => p.id === id);
+  const project = projects.find((p) => p.id.toString() === id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const gotoPage = (page: string, id?: string, scrollPos?: number) => {
+    const url = id ? `${page}/${id}` : page;
+    navigate(url, { state: { scrollPos } });
+  };
 
   if (!project) {
     return (
@@ -452,6 +458,7 @@ const ProjectDetail: React.FC = () => {
               variant="contained"
               size="large"
               sx={{ px: 4, py: 1.5, fontSize: "1.1rem" }}
+              onClick={() => gotoPage("/", undefined, 99999)}
             >
               Get In Touch
             </Button>

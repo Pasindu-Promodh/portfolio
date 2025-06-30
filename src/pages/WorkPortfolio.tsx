@@ -16,25 +16,24 @@ import Tab from "@mui/material/Tab";
 import Badge from "@mui/material/Badge";
 import { Code, Star, ArrowBack } from "@mui/icons-material";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // Import your projects data
 import projects from "../data/projects.json";
 import projectMeta from "../data/projectMeta";
 
 const WorkPortfolio: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const scrollPos = location.state?.scrollPos;
+  
   const [selectedTab, setSelectedTab] = React.useState(0);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const navigate = useNavigate();
-
-  const gotoPage = (page: string, id?: string, scrollPos?: number) => {
-    const url = id ? `${page}/${id}` : page;
-    navigate(url, { state: { scrollPos } });
-  };
+   useEffect(() => {
+      if (typeof scrollPos === "number") {
+        window.scrollTo(0, scrollPos);
+      }
+    }, [scrollPos]);
 
   const tabCategories = projectMeta
     .filter((meta) => meta.includeInTabs)
@@ -84,6 +83,11 @@ const WorkPortfolio: React.FC = () => {
       default:
         return status;
     }
+  };
+
+  const gotoPage = (page: string, id?: number, scrollPos?: number) => {
+    const url = id ? `${page}/${id}` : page;
+    navigate(url, { state: { scrollPos } });
   };
 
   return (
