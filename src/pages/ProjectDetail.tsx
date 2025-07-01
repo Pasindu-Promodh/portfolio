@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -26,27 +26,28 @@ import {
 
 // Import your projects data
 import projects from "../data/projects.json";
-import { Fade, Slide } from "@mui/material";
+import { Fade } from "@mui/material";
 
 const ProjectDetail: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  const [loaded, setLoaded] = useState(false);
   const [fullscreenImage, setFullscreenImage] = React.useState<string | null>(
     null
   );
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   // Find the project based on the ID from URL parameters
   const project = projects.find((p) => p.id.toString() === id);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const gotoPage = (page: string, id?: number, scrollPos?: number) => {
+  const gotoPage = (page: string, id?: number) => {
     const url = id ? `${page}/${id}` : page;
-    navigate(url, { state: { scrollPos } });
+    navigate(url);
   };
 
   if (!project) {
@@ -133,7 +134,7 @@ const ProjectDetail: React.FC = () => {
   };
 
   // Handle escape key to close fullscreen and arrow keys for navigation
-  React.useEffect(() => {
+  useEffect(() => {
     const handleKeydown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         closeFullscreen();
@@ -150,39 +151,8 @@ const ProjectDetail: React.FC = () => {
     }
   }, [fullscreenImage, currentImageIndex, allMedia]);
 
-  return (
+  return loaded ? (
     <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
-      {/* Header Section with Project Title */}
-      {/* <Box
-        sx={{
-          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-          color: "white",
-          py: 6,
-          position: "relative",
-        }}
-      >
-        <Container maxWidth="lg">
-          <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
-            <IconButton
-              sx={{ color: "white", mr: 2 }}
-              onClick={() => navigate("/work")}
-            >
-              <ArrowBack />
-            </IconButton>
-            <Typography variant="h6" color="rgba(255,255,255,0.8)">
-              Back to Portfolio
-            </Typography>
-          </Box>
-
-          <Typography variant="h3" fontWeight="bold" gutterBottom>
-            {project.title}
-          </Typography>
-          <Typography variant="h6" color="rgba(255,255,255,0.9)" paragraph>
-            {project.description}
-          </Typography>
-        </Container>
-      </Box> */}
-
       <Box
         sx={{
           background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
@@ -223,182 +193,210 @@ const ProjectDetail: React.FC = () => {
       </Box>
 
       {/* Project Image and Details */}
-      <Container maxWidth="lg" sx={{ py: 6 }}>
-        <Slide direction="up" in timeout={1000}>
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
-          {/* Main Image with Featured Tag */}
-          <Box
-            sx={{
-              position: "relative",
-              mb: 4,
-              overflow: "hidden",
-              borderRadius: 1,
-            }}
-          >
+      <Fade in={loaded} timeout={1000}>
+        <Container maxWidth="lg" sx={{ py: 6 }}>
+          <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            {/* Main Image with Featured Tag */}
             <Box
-              component="img"
-              src={project.image}
-              alt={project.title}
               sx={{
-                width: "100%",
-                // height: { xs: 200, sm: 300, md: 400 },
-                aspectRatio: "16/6",
-                objectFit: "cover",
-                display: "block",
-                cursor: "pointer",
-                transition: "transform 0.3s ease-in-out",
-                "&:hover": {
-                  transform: "scale(1.05)",
-                },
+                position: "relative",
+                mb: 4,
+                overflow: "hidden",
+                borderRadius: 1,
               }}
-              onClick={() => openFullscreen(project.image)}
-            />
-            {/* Featured Tag - Top Right */}
-            {project.featured && (
-              <Chip
-                icon={<Star />}
-                label="Featured"
-                color="primary"
-                size="medium"
-                sx={{
-                  position: "absolute",
-                  top: 16,
-                  right: 16,
-                  fontWeight: "bold",
-                  zIndex: 1,
-                }}
-              />
-            )}
-          </Box>
-
-          {/* Media Gallery Thumbnails */}
-          {allMedia.length > 1 && (
-            <Box sx={{ mb: 4 }}>
-              <Typography variant="h6" fontWeight="bold" sx={{ mb: 2 }}>
-                Media Gallery
-              </Typography>
+            >
               <Box
+                component="img"
+                src={project.image}
+                alt={project.title}
                 sx={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: 2,
-                  justifyContent: { xs: "center", sm: "flex-start" },
+                  width: "100%",
+                  // height: { xs: 200, sm: 300, md: 400 },
+                  aspectRatio: "16/6",
+                  objectFit: "cover",
+                  display: "block",
+                  cursor: "pointer",
+                  transition: "transform 0.3s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
-              >
-                {allMedia.map((mediaSrc, index) => (
-                  <Box
-                    key={index}
-                    component={mediaSrc.endsWith(".mp4") ? "video" : "img"}
-                    src={mediaSrc}
-                    alt={`${project.title} - Image ${index + 1}`}
-                    sx={{
-                      width: { xs: 80, sm: 100, md: 120 },
-                      // height: { xs: 60, sm: 75, md: 90 },
-                      aspectRatio: "16/9",
-                      objectFit: "cover",
-                      borderRadius: 1,
-                      cursor: "pointer",
-                      border: "2px solid transparent",
-                      transition: "all 0.2s ease-in-out",
-                      "&:hover": {
-                        border: "2px solid #1976d2",
-                        transform: "scale(1.05)",
-                        boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                      },
-                    }}
-                    onClick={() => openFullscreen(mediaSrc)}
-                  />
-                ))}
-              </Box>
-            </Box>
-          )}
-
-          <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
-            {getProjectIcon(project.type)}
-            <Typography variant="h5" fontWeight="bold" sx={{ ml: 2 }}>
-              {project.title}
-            </Typography>
-          </Box>
-
-          <Typography
-            variant="body1"
-            color="text.primary"
-            paragraph
-            sx={{ lineHeight: 1.8 }}
-          >
-            {project.longDescription}
-          </Typography>
-
-          <Divider sx={{ my: 4 }} />
-
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 4 }}>
-            {project.tags.map((tag) => (
-              <Chip
-                key={tag}
-                label={tag}
-                size="medium"
-                variant="filled"
-                sx={{
-                  bgcolor: "white",
-                  color: "black",
-                  fontWeight: "medium",
-                  border: "1px solid #ddd",
-                }}
+                onClick={() => openFullscreen(project.image)}
               />
-            ))}
-          </Box>
+              {/* Featured Tag - Top Right */}
+              {project.featured && (
+                <Chip
+                  icon={<Star />}
+                  label="Featured"
+                  color="primary"
+                  size="medium"
+                  sx={{
+                    position: "absolute",
+                    top: 16,
+                    right: 16,
+                    fontWeight: "bold",
+                    zIndex: 1,
+                  }}
+                />
+              )}
+            </Box>
 
-          {/* Status Chip - Bottom Left Above Buttons */}
-          <Box sx={{ mb: 3 }}>
-            <Chip
-              label={getStatusLabel(project.status)}
-              color={getStatusColor(project.status) as any}
-              size="medium"
-              sx={{ fontWeight: "bold" }}
-            />
-          </Box>
+            {/* Media Gallery Thumbnails */}
+            {allMedia.length > 1 && (
+              <Box sx={{ mb: 4 }}>
+                <Typography variant="h6" fontWeight="bold" sx={{ mb: 2 }}>
+                  Media Gallery
+                </Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: 2,
+                    justifyContent: { xs: "center", sm: "flex-start" },
+                  }}
+                >
+                  {allMedia.map((mediaSrc, index) => (
+                    <Box
+                      key={index}
+                      component={mediaSrc.endsWith(".mp4") ? "video" : "img"}
+                      src={mediaSrc}
+                      alt={`${project.title} - Image ${index + 1}`}
+                      sx={{
+                        width: { xs: 80, sm: 100, md: 120 },
+                        // height: { xs: 60, sm: 75, md: 90 },
+                        aspectRatio: "16/9",
+                        objectFit: "cover",
+                        borderRadius: 1,
+                        cursor: "pointer",
+                        border: "2px solid transparent",
+                        transition: "all 0.2s ease-in-out",
+                        "&:hover": {
+                          border: "2px solid #1976d2",
+                          transform: "scale(1.05)",
+                          boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+                        },
+                      }}
+                      onClick={() => openFullscreen(mediaSrc)}
+                    />
+                  ))}
+                </Box>
+              </Box>
+            )}
 
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
-            {project.demo && (
-              <Button
-                variant="contained"
-                startIcon={<PlayArrow />}
-                size="large"
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </Button>
-            )}
-            {project.github && (
-              <Button
-                variant="outlined"
-                startIcon={<GitHub />}
-                size="large"
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Code
-              </Button>
-            )}
-            {project.download && (
-              <Button
-                variant="outlined"
-                startIcon={<Download />}
-                size="large"
-                href={project.download}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download
-              </Button>
-            )}
+            <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
+              {getProjectIcon(project.type)}
+              <Typography variant="h5" fontWeight="bold" sx={{ ml: 2 }}>
+                {project.title}
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              paragraph
+              sx={{ lineHeight: 1.8 }}
+            >
+              {project.longDescription}
+            </Typography>
+
+            <Divider sx={{ my: 4 }} />
+
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 4 }}>
+              {project.tags.map((tag) => (
+                <Chip
+                  key={tag}
+                  label={tag}
+                  size="medium"
+                  variant="filled"
+                  sx={{
+                    bgcolor: "white",
+                    color: "black",
+                    fontWeight: "medium",
+                    border: "1px solid #ddd",
+                  }}
+                />
+              ))}
+            </Box>
+
+            {/* Status Chip - Bottom Left Above Buttons */}
+            <Box sx={{ mb: 3 }}>
+              <Chip
+                label={getStatusLabel(project.status)}
+                color={getStatusColor(project.status) as any}
+                size="medium"
+                sx={{ fontWeight: "bold" }}
+              />
+            </Box>
+
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
+              {project.demo && (
+                <Button
+                  variant="contained"
+                  startIcon={<PlayArrow />}
+                  size="large"
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </Button>
+              )}
+              {project.github && (
+                <Button
+                  variant="outlined"
+                  startIcon={<GitHub />}
+                  size="large"
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code
+                </Button>
+              )}
+              {project.download && (
+                <Button
+                  variant="outlined"
+                  startIcon={<Download />}
+                  size="large"
+                  href={project.download}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download
+                </Button>
+              )}
+            </Box>
+          </Paper>
+
+          {/* Call to Action */}
+          <Box sx={{ bgcolor: "grey.50", py: 8, mt: 8 }}>
+            <Container maxWidth="lg">
+              <Box sx={{ textAlign: "center" }}>
+                <Typography variant="h4" gutterBottom fontWeight="bold">
+                  Interested in Working Together?
+                </Typography>
+                <Typography
+                  variant="h6"
+                  color="text.secondary"
+                  paragraph
+                  sx={{ mb: 4 }}
+                >
+                  I'm always excited to take on new challenges and create
+                  amazing experiences.
+                </Typography>
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{ px: 4, py: 1.5, fontSize: "1.1rem" }}
+                  onClick={() => gotoPage("/")}
+                >
+                  Get In Touch
+                </Button>
+              </Box>
+            </Container>
           </Box>
-        </Paper>
-        </Slide>
-      </Container>
+        </Container>
+      </Fade>
 
       {/* Fullscreen Image Modal */}
       {fullscreenImage && (
@@ -531,36 +529,8 @@ const ProjectDetail: React.FC = () => {
           )}
         </Box>
       )}
-
-      {/* Call to Action */}
-      <Box sx={{ bgcolor: "grey.50", py: 8, mt: 8 }}>
-        <Container maxWidth="lg">
-          <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h4" gutterBottom fontWeight="bold">
-              Interested in Working Together?
-            </Typography>
-            <Typography
-              variant="h6"
-              color="text.secondary"
-              paragraph
-              sx={{ mb: 4 }}
-            >
-              I'm always excited to take on new challenges and create amazing
-              experiences.
-            </Typography>
-            <Button
-              variant="contained"
-              size="large"
-              sx={{ px: 4, py: 1.5, fontSize: "1.1rem" }}
-              onClick={() => gotoPage("/", undefined, 99999)}
-            >
-              Get In Touch
-            </Button>
-          </Box>
-        </Container>
-      </Box>
     </Box>
-  );
+  ) : null;
 };
 
 export default ProjectDetail;

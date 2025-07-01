@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -20,7 +20,7 @@ import {
   KeyboardArrowRight,
   Code,
 } from "@mui/icons-material";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Snackbar } from "@mui/material";
 
 //data
@@ -30,20 +30,17 @@ import projectMeta from "../data/projectMeta";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
-  const location = useLocation();
-  const scrollPos = location.state?.scrollPos;
 
-  const [copied, setCopied] = React.useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    if (typeof scrollPos === "number") {
-      window.scrollTo(0, scrollPos);
-    }
-  }, [scrollPos]);
+    setLoaded(true);
+  }, []);
 
-  const gotoPage = (page: string, id?: number, scrollPos?: number) => {
+  const gotoPage = (page: string, id?: number) => {
     const url = id ? `${page}/${id}` : page;
-    navigate(url, { state: { scrollPos } });
+    navigate(url);
   };
 
   const getProjectIcon = (type: string) => {
@@ -51,7 +48,7 @@ const Home: React.FC = () => {
     return match?.icon || <Code />;
   };
 
-  return (
+  return loaded ? (
     <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
       {/* Hero Section */}
       <Box
@@ -77,7 +74,7 @@ const Home: React.FC = () => {
         <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2 }}>
           <Grid container spacing={4} alignItems="center">
             <Grid size={{ xs: 12, md: 8 }}>
-              <Fade in timeout={1000}>
+              <Fade in timeout={800}>
                 <Box>
                   <Typography
                     variant="h6"
@@ -173,14 +170,15 @@ const Home: React.FC = () => {
                     sx={{ mt: 4, display: "flex", gap: 2, flexWrap: "wrap" }}
                   >
                     <Button
-                      variant="contained"
+                      variant="outlined"
                       size="large"
                       endIcon={<KeyboardArrowRight />}
                       onClick={() => gotoPage("work")}
                       sx={{
-                        bgcolor: "white",
+                        borderColor: "white",
+                        bgcolor: "rgba(255,255,255,0.8)",
                         color: "primary.main",
-                        "&:hover": { bgcolor: "grey.100" },
+                        "&:hover": { bgcolor: "white" },
                       }}
                     >
                       View My Work
@@ -192,7 +190,6 @@ const Home: React.FC = () => {
                         borderColor: "white",
                         color: "white",
                         "&:hover": {
-                          borderColor: "grey.300",
                           bgcolor: "rgba(255,255,255,0.1)",
                         },
                       }}
@@ -205,6 +202,7 @@ const Home: React.FC = () => {
             </Grid>
             {/* Avatar */}
             <Grid size={{ xs: 12, md: 4 }}>
+              {/* <Slide direction="left" in timeout={1200}> */}
               <Slide direction="left" in timeout={1200}>
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
                   <Avatar
@@ -229,8 +227,7 @@ const Home: React.FC = () => {
 
       {/* Skills Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
-        {/* <Fade in timeout={1000}> */}
-        <Slide direction="up" in timeout={1000}>
+        <Fade in timeout={1000}>
           <Box>
             <Typography
               variant="h3"
@@ -249,40 +246,36 @@ const Home: React.FC = () => {
             >
               Technologies I work with to bring ideas to life
             </Typography>
-
-            <Grid container spacing={3}>
-              {skills.map((skill) => (
-                <Grid size={{ xs: 6, sm: 4, md: 3 }} key={skill.name}>
-                  {/* <Fade in timeout={800 + index * 500}> */}
-                  {/* <Slide direction="up" in timeout={800 + index * 500}> */}
-                  <Card
-                    sx={{
-                      height: "100%",
-                      textAlign: "center",
-                      transition: "transform 0.3s, box-shadow 0.3s",
-                      "&:hover": {
-                        transform: "translateY(-8px)",
-                        boxShadow: "0 12px 24px rgba(17, 14, 14, 0.15)",
-                      },
-                    }}
-                  >
-                    <CardContent sx={{ py: 3 }}>
-                      <Typography variant="h2" sx={{ mb: 1 }}>
-                        {skill.icon}
-                      </Typography>
-                      <Typography variant="h6" fontWeight="medium">
-                        {skill.name}
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                  {/* </Fade> */}
-                  {/* </Slide> */}
-                </Grid>
-              ))}
-            </Grid>
           </Box>
-        </Slide>
-        {/* </Fade> */}
+        </Fade>
+        <Grid container spacing={3}>
+          {skills.map((skill, index) => (
+            <Fade in timeout={1200 + index * 200} key={skill.name}>
+              <Grid size={{ xs: 6, sm: 4, md: 3 }} key={skill.name}>
+                <Card
+                  sx={{
+                    height: "100%",
+                    textAlign: "center",
+                    transition: "transform 0.3s, box-shadow 0.3s",
+                    "&:hover": {
+                      transform: "translateY(-8px)",
+                      boxShadow: "0 12px 24px rgba(17, 14, 14, 0.15)",
+                    },
+                  }}
+                >
+                  <CardContent sx={{ py: 3 }}>
+                    <Typography variant="h2" sx={{ mb: 1 }}>
+                      {skill.icon}
+                    </Typography>
+                    <Typography variant="h6" fontWeight="medium">
+                      {skill.name}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Fade>
+          ))}
+        </Grid>
       </Container>
 
       {/* Featured Projects */}
@@ -310,7 +303,6 @@ const Home: React.FC = () => {
           <Grid container spacing={4}>
             {projects.map((project) => (
               <Grid size={{ xs: 12, md: 4 }} key={project.title}>
-                {/* <Fade in timeout={1000 + index * 200}> */}
                 <Card
                   sx={{
                     height: "100%",
@@ -380,7 +372,6 @@ const Home: React.FC = () => {
                       </Button> */}
                   </CardContent>
                 </Card>
-                {/* </Fade> */}
               </Grid>
             ))}
           </Grid>
@@ -390,7 +381,7 @@ const Home: React.FC = () => {
             <Button
               variant="contained"
               size="large"
-              onClick={() => gotoPage("work", undefined, 0)}
+              onClick={() => gotoPage("work")}
               endIcon={<KeyboardArrowRight />}
               sx={{ px: 4, py: 1.5 }}
             >
@@ -483,7 +474,7 @@ const Home: React.FC = () => {
         />
       </Container>
     </Box>
-  );
+  ) : null;
 };
 
 export default Home;
