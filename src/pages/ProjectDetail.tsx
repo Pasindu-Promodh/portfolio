@@ -26,6 +26,7 @@ import {
 
 // Import your projects data
 import projects from "../data/projects.json";
+import { Fade, Slide } from "@mui/material";
 
 const ProjectDetail: React.FC = () => {
   const { id } = useParams();
@@ -43,7 +44,7 @@ const ProjectDetail: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const gotoPage = (page: string, id?: string, scrollPos?: number) => {
+  const gotoPage = (page: string, id?: number, scrollPos?: number) => {
     const url = id ? `${page}/${id}` : page;
     navigate(url, { state: { scrollPos } });
   };
@@ -152,7 +153,7 @@ const ProjectDetail: React.FC = () => {
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
       {/* Header Section with Project Title */}
-      <Box
+      {/* <Box
         sx={{
           background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
           color: "white",
@@ -180,10 +181,50 @@ const ProjectDetail: React.FC = () => {
             {project.description}
           </Typography>
         </Container>
+      </Box> */}
+
+      <Box
+        sx={{
+          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+          color: "white",
+          py: 6,
+          position: "relative",
+        }}
+      >
+        <Container maxWidth="lg">
+          <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
+            <IconButton
+              sx={{ color: "white", mr: 2 }}
+              onClick={() => navigate("/work")}
+            >
+              <ArrowBack />
+            </IconButton>
+            <Typography variant="h6" color="rgba(255,255,255,0.8)">
+              Back to Portfolio
+            </Typography>
+          </Box>
+
+          <Fade in timeout={800}>
+            <Box>
+              <Typography variant="h2" fontWeight="bold" gutterBottom>
+                {project.title}
+              </Typography>
+              <Typography variant="h5" color="rgba(255,255,255,0.9)" paragraph>
+                {project.description}
+              </Typography>
+              {/* <Typography variant="body1" color="rgba(255,255,255,0.8)">
+                From immersive visuals to interactive gameplay, each project
+                reflects my passion for creating engaging and polished digital
+                experiences.
+              </Typography> */}
+            </Box>
+          </Fade>
+        </Container>
       </Box>
 
       {/* Project Image and Details */}
       <Container maxWidth="lg" sx={{ py: 6 }}>
+        <Slide direction="up" in timeout={1000}>
         <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
           {/* Main Image with Featured Tag */}
           <Box
@@ -356,6 +397,7 @@ const ProjectDetail: React.FC = () => {
             )}
           </Box>
         </Paper>
+        </Slide>
       </Container>
 
       {/* Fullscreen Image Modal */}

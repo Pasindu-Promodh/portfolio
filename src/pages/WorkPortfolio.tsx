@@ -18,9 +18,10 @@ import { Code, Star, ArrowBack } from "@mui/icons-material";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-// Import your projects data
+//data
 import projects from "../data/projects.json";
 import projectMeta from "../data/projectMeta";
+import { Slide } from "@mui/material";
 
 const WorkPortfolio: React.FC = () => {
   const location = useLocation();
@@ -105,8 +106,7 @@ const WorkPortfolio: React.FC = () => {
           <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
             <IconButton
               sx={{ color: "white", mr: 2 }}
-              // onClick={() => window.history.back()}
-              onClick={() => gotoPage("/")} // Navigate to home
+              onClick={() => gotoPage("/")}
             >
               <ArrowBack />
             </IconButton>
@@ -135,140 +135,145 @@ const WorkPortfolio: React.FC = () => {
 
       {/* Filter Tabs */}
       <Container maxWidth="lg" sx={{ mt: 4 }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider", mb: 4 }}>
-          <Tabs
-            value={selectedTab}
-            onChange={(_, newValue) => setSelectedTab(newValue)}
-            variant="scrollable"
-            scrollButtons="auto"
-          >
-            {tabCategories.map((category) => (
-              <Tab
-                key={category.value}
-                label={
-                  <Badge badgeContent={category.count} color="primary">
-                    {category.label}
-                  </Badge>
-                }
-              />
-            ))}
-          </Tabs>
-        </Box>
+        <Slide direction="up" in timeout={1000}>
+          <Box>
+            <Box sx={{ borderBottom: 1, borderColor: "divider", mb: 4 }}>
+              <Tabs
+                value={selectedTab}
+                onChange={(_, newValue) => setSelectedTab(newValue)}
+                variant="scrollable"
+                scrollButtons="auto"
+              >
+                {tabCategories.map((category) => (
+                  <Tab
+                    key={category.value}
+                    label={
+                      <Badge badgeContent={category.count} color="primary">
+                        {category.label}
+                      </Badge>
+                    }
+                  />
+                ))}
+              </Tabs>
+            </Box>
 
-        {/* All Projects Grid */}
-        <Box>
-          <Typography variant="h4" gutterBottom fontWeight="bold">
-            {selectedTab === 0
-              ? "All Projects"
-              : tabCategories[selectedTab].label}
-          </Typography>
-          <Grid container spacing={4}>
-            {filteredProjects.map((project, index) => (
-              <Grid size={{ xs: 12, md: 6, lg: 4 }} key={project.id}>
-                <Fade in timeout={800 + index * 200}>
-                  <Card
-                    sx={{
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      position: "relative",
-                      boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
-                      transition: "transform 0.3s ease, box-shadow 0.3s",
-                      "&:hover": {
-                        transform: "translateY(-8px)",
-                        boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
-                      },
-                    }}
-                  >
-                    {project.featured && (
-                      <Box
-                        sx={{
-                          position: "absolute",
-                          top: 16,
-                          right: 16,
-                          zIndex: 1,
-                        }}
-                      >
-                        <Chip
-                          icon={<Star />}
-                          label="Featured"
-                          color="primary"
-                          size="small"
-                        />
-                      </Box>
-                    )}
-
-                    <CardMedia
-                      component="img"
-                      // height="200"
+            {/* All Projects Grid */}
+            <Box>
+              <Typography variant="h4" gutterBottom fontWeight="bold">
+                {selectedTab === 0
+                  ? "All Projects"
+                  : tabCategories[selectedTab].label}
+              </Typography>
+              <Grid container spacing={4}>
+                {filteredProjects.map((project) => (
+                  <Grid size={{ xs: 12, md: 6, lg: 4 }} key={project.id}>
+                    {/* <Fade in timeout={800 + index * 200}> */}
+                    <Card
                       sx={{
-                        aspectRatio: "16/9",
+                        height: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        position: "relative",
+                        boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+                        transition: "transform 0.3s ease, box-shadow 0.3s",
+                        "&:hover": {
+                          transform: "translateY(-8px)",
+                          boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
+                        },
                       }}
-                      image={project.image}
-                      alt={project.title}
-                    />
-
-                    <CardContent sx={{ flexGrow: 1 }}>
-                      <Box
-                        sx={{ display: "flex", alignItems: "center", mb: 2 }}
-                      >
-                        {getProjectIcon(project.type)}
-                        <Typography
-                          variant="h6"
-                          fontWeight="bold"
-                          sx={{ ml: 1 }}
-                        >
-                          {project.title}
-                        </Typography>
-                      </Box>
-
-                      <Typography color="text.secondary" paragraph>
-                        {project.description}
-                      </Typography>
-
-                      <Box
-                        sx={{
-                          display: "flex",
-                          flexWrap: "wrap",
-                          gap: 1,
-                          mb: 2,
-                        }}
-                      >
-                        {project.tags.map((tag) => (
-                          <Chip
-                            key={tag}
-                            label={tag}
-                            size="small"
-                            variant="outlined"
-                          />
-                        ))}
-                      </Box>
-                    </CardContent>
-
-                    <CardActions
-                      sx={{ justifyContent: "space-between", px: 2, pb: 2 }}
+                      onClick={() => gotoPage("/project", project.id)}
                     >
-                      <Chip
-                        label={getStatusLabel(project.status)}
-                        color={getStatusColor(project.status) as any}
-                        size="small"
+                      {project.featured && (
+                        <Box
+                          sx={{
+                            position: "absolute",
+                            top: 16,
+                            right: 16,
+                            zIndex: 1,
+                          }}
+                        >
+                          <Chip
+                            icon={<Star />}
+                            label="Featured"
+                            color="primary"
+                            size="small"
+                          />
+                        </Box>
+                      )}
+
+                      <CardMedia
+                        component="img"
+                        // height="200"
+                        sx={{
+                          aspectRatio: "16/9",
+                        }}
+                        image={project.image}
+                        alt={project.title}
                       />
 
-                      <Button
+                      <CardContent sx={{ flexGrow: 1 }}>
+                        <Box
+                          sx={{ display: "flex", alignItems: "center", mb: 2 }}
+                        >
+                          {getProjectIcon(project.type)}
+                          <Typography
+                            variant="h6"
+                            fontWeight="bold"
+                            sx={{ ml: 1 }}
+                          >
+                            {project.title}
+                          </Typography>
+                        </Box>
+
+                        <Typography color="text.secondary" paragraph>
+                          {project.description}
+                        </Typography>
+
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: 1,
+                            mb: 2,
+                          }}
+                        >
+                          {project.tags.map((tag) => (
+                            <Chip
+                              key={tag}
+                              label={tag}
+                              size="small"
+                              variant="outlined"
+                            />
+                          ))}
+                        </Box>
+                      </CardContent>
+
+                      <CardActions
+                        sx={{ justifyContent: "space-between", px: 2, pb: 2 }}
+                      >
+                        <Chip
+                          label={getStatusLabel(project.status)}
+                          color={getStatusColor(project.status) as any}
+                          size="small"
+                        />
+
+                        {/* <Button
                         variant="contained"
                         startIcon={<Code />}
                         size="small"
                         onClick={() => gotoPage("/project", project.id)}
                       >
                         View Project
-                      </Button>
-                    </CardActions>
-                  </Card>
-                </Fade>
+                      </Button> */}
+                      </CardActions>
+                    </Card>
+                    {/* </Fade> */}
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
-        </Box>
+            </Box>
+          </Box>
+        </Slide>
       </Container>
 
       {/* Call to Action */}
