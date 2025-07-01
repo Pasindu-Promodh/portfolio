@@ -4,7 +4,7 @@
     "title": "Fluffy's Flight",
     "description": "Help Fluffy, the baby parrot, safely bounce down a spinning tree in this addictive arcade game! Built in Unity with multi-auth login, leaderboard, and ad monetization. Available on Google Play.",
     "longDescription": "Fluffy's Flight is a charming arcade game that takes players on an endless descent with Fluffy, an adorable baby parrot, as it overcomes its fear of heights. Inspired by the core mechanics of Helix Jump, players swipe to rotate a 3D tree structure, guiding Fluffy through safe openings while avoiding broken bricks and gaps. Developed using Unity, I handled the complete game development cycle, from concept to deployment, including implementing physics-based movement, procedural level generation, and integrating multi-platform login, cloud save, and real-time leaderboards. The game also features monetization through Unity LevelPlay with IronSource and ad placements. Published successfully on the Google Play Store, Fluffy's Flight combines immersive gameplay, colorful visuals, and relaxing music to offer a skill-based, addictive experience suitable for all ages.",
-    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/FF%20Banner.png",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
     "tags": ["Unity", "C#", "Arcade", "Mobile Game", "Endless", "3D", "Game Design"],
     "type": "game",
     "status": "completed",
@@ -13,7 +13,7 @@
     "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
     "download": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
     "media" : [
-      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/FF_GameIcon.png",
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF_GameIcon.png",
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(1).mp4",
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(2).mp4"
     ]

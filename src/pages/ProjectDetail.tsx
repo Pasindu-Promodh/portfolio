@@ -258,15 +258,12 @@ const ProjectDetail: React.FC = () => {
                   {allMedia.map((mediaSrc, index) => (
                     <Box
                       key={index}
-                      component={mediaSrc.endsWith(".mp4") ? "video" : "img"}
-                      src={mediaSrc}
-                      alt={`${project.title} - Image ${index + 1}`}
                       sx={{
+                        position: "relative",
                         width: { xs: 80, sm: 100, md: 120 },
-                        // height: { xs: 60, sm: 75, md: 90 },
                         aspectRatio: "16/9",
-                        objectFit: "cover",
                         borderRadius: 1,
+                        overflow: "hidden",
                         cursor: "pointer",
                         border: "2px solid transparent",
                         transition: "all 0.2s ease-in-out",
@@ -277,7 +274,38 @@ const ProjectDetail: React.FC = () => {
                         },
                       }}
                       onClick={() => openFullscreen(mediaSrc)}
-                    />
+                    >
+                      <Box
+                        component={mediaSrc.endsWith(".mp4") ? "video" : "img"}
+                        src={mediaSrc}
+                        alt={`${project.title} - Image ${index + 1}`}
+                        sx={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          display: "block",
+                        }}
+                      />
+                      {mediaSrc.endsWith(".mp4") && (
+                        <Box
+                          sx={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            color: "white",
+                            bgcolor: "rgba(0, 0, 0, 0.5)",
+                            borderRadius: "50%",
+                            p: 1,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <PlayArrow fontSize="small" />
+                        </Box>
+                      )}
+                    </Box>
                   ))}
                 </Box>
               </Box>

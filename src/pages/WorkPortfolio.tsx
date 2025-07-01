@@ -132,6 +132,7 @@ const WorkPortfolio: React.FC = () => {
       {/* Filter Tabs */}
       <Container maxWidth="lg" sx={{ mt: 4 }}>
         <Box sx={{ mb: 4 }}>
+          <Box sx={{ mb: 2 }}>
           <Fade in timeout={1000}>
             <Tabs
               value={selectedTab}
@@ -151,7 +152,7 @@ const WorkPortfolio: React.FC = () => {
               ))}
             </Tabs>
           </Fade>
-
+</Box>
           {/* All Projects Grid */}
 
           <Fade in timeout={1200}>
@@ -164,13 +165,14 @@ const WorkPortfolio: React.FC = () => {
           <Grid container spacing={4}>
             {filteredProjects.map((project, index) => (
               <Fade in timeout={1400 + index * 200} key={project.id}>
-                <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+                <Grid size={{ xs: 12, md: 6, lg: 4 }} >
                   <Card
                     sx={{
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
                       position: "relative",
+                      cursor: "pointer",
                       boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
                       transition: "transform 0.3s ease, box-shadow 0.3s",
                       "&:hover": {
