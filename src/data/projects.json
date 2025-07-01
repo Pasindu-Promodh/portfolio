@@ -4,7 +4,7 @@
     "title": "Fluffy's Flight",
     "description": "Endless arcade game featuring a Fluffy baby parrot's descent",
     "longDescription": "Fluffy's Flight takes you on a captivating journey with Fluffy, the cutest baby parrot, as it braves its first descent from the tallest tree. Struggling with a fear of heights, Fluffy needs your help to navigate down the tree safely. Swipe left or right to rotate the tree and create safe paths for Fluffy to bounce through, avoiding dangerous broken bricks.\n\nIn this charming arcade adventure, your objective is to keep Fluffy safe for as long as possible, collecting special power-ups and coins along the way. The further Fluffy descends, the higher your score climbs. Encounter unique challenges like broken bricks and tricky gaps that will test your reflexes and strategy.\n\nWith endless gameplay, vibrant graphics, and soothing music, \"Fluffy's Flight\" offers an immersive experience that will keep you engaged for hours. Aim to beat your previous high scores and enjoy the adorable visuals of Fluffy's journey. Perfect for players of all ages, \"Fluffy's Flight\" combines skill and charm in a delightful and addictive game. Download now and help Fluffy take its first flight!",
-    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/refs/heads/main/public/Fluffy%20Flight/FF_GameIcon.png",
+    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/FF_GameIcon.png",
     "tags": ["Unity", "C#", "Arcade", "Mobile Game", "Endless", "3D", "Game Design"],
     "type": "game",
     "status": "completed",
@@ -13,7 +13,7 @@
     "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
     "download": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
     "media" : [
-      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/refs/heads/main/public/Fluffy%20Flight/FF_GameIcon.png",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/FF_GameIcon.png",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop"
     ]
   },
