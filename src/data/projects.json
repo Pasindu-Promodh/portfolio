@@ -36,13 +36,16 @@
     "title": "Find The Beast",
     "description": "A fast-paced meme-inspired 2D arcade game",
     "longDescription": "Find The Beast is a 2D hypercasual arcade game developed in Unity, inspired by viral internet memes of Mr. Beast and Mr. Lean. Players must quickly identify and tap on the real Mr. Beast as he moves among a swarm of identical-looking Mr. Lean faces. With each level, the game increases in speed and complexity—introducing more distractions and challenging the player's reflexes. Designed for quick, addictive gameplay and meme lovers, it's a perfect mix of humor and challenge.",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
+    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Find%20the%20beast/find%20the%20beast.jpg",
     "tags": ["Unity", "2D", "Arcade", "Hypercasual", "Meme", "Mr Beast", "Mr Lean", "Mobile Game"],
     "type": "game",
     "status": "completed",
     "featured": false,
     "github": "https://github.com/ManeeshaG1/Find-the-Beast",
-    "demo": "https://memegameswtf.github.io/FindTheBeast/"
+    "demo": "https://memegameswtf.github.io/FindTheBeast/",
+    "media" : [
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Find%20the%20beast/Movie_010.mp4"
+    ]
   },
   {
     "id": 4,
