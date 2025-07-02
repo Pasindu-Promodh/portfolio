@@ -81,14 +81,15 @@
   },
   {
     "id": 6,
-    "title": "AR Furniture Visualizer",
-    "description": "Augmented reality app for furniture placement",
-    "longDescription": "An innovative AR application built with Unity and ARCore/ARKit that allows users to visualize furniture in their real-world environment. Features 3D model library, realistic lighting, measurement tools, and social sharing capabilities. This app transforms the furniture shopping experience by letting users 'try before they buy' directly in their homes, ensuring a perfect fit and aesthetic match.",
+    "title": "Brain Rain",
+    "description": "Brains are falling. catch them or be left brainless in this viral meme-inspired reflex game.",
+    "longDescription": "Brain Rain is a fun and fast-paced 2D Unity game inspired by the viral 'hey you dropped this 🧠' meme. Players control a stick figure character who must move left and right to catch falling brains. Miss a brain, and it's game over. With increasing difficulty and speed, this hypercasual game tests your reflexes while delivering meme-fueled humor. Designed for short, engaging sessions, it’s perfect for mobile or web platforms.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=600&fit=crop",
-    "tags": ["Unity", "AR", "C#", "ARCore", "ARKit", "3D Modeling", "Augmented Reality"],
-    "type": "mobile",
-    "status": "in-progress",
-    "featured": true,
-    "github": "https://github.com/username/ar-furniture"
+    "tags": ["Unity", "2D", "Hypercasual", "Arcade", "Meme", "Stickman", "Catch Game", "Mobile Game"],
+    "type": "game",
+    "status": "completed",
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Brain-Rain",
+    "demo": "https://maneeshag1.github.io/Brain-Rain-Build/"
   }
 ]
