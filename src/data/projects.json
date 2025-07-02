@@ -33,16 +33,16 @@
   },
   {
     "id": 3,
-    "title": "Analytics Dashboard Pro",
-    "description": "Modern data visualization dashboard with real-time updates",
-    "longDescription": "A sophisticated analytics dashboard built with React, TypeScript, and MUI. Features real-time data visualization, customizable widgets, advanced filtering, export capabilities, and responsive design that works seamlessly across all devices. This dashboard is ideal for businesses needing quick insights into their data, offering powerful charting options with D3.js and WebSocket integration for live updates. It's designed for scalability and easy integration with existing data sources.",
+    "title": "Find The Beast",
+    "description": "A fast-paced meme-inspired 2D arcade game",
+    "longDescription": "Find The Beast is a 2D hypercasual arcade game developed in Unity, inspired by viral internet memes of Mr. Beast and Mr. Lean. Players must quickly identify and tap on the real Mr. Beast as he moves among a swarm of identical-looking Mr. Lean faces. With each level, the game increases in speed and complexity—introducing more distractions and challenging the player's reflexes. Designed for quick, addictive gameplay and meme lovers, it's a perfect mix of humor and challenge.",
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
-    "tags": ["React", "TypeScript", "MUI", "D3.js", "WebSockets", "Data Viz", "Dashboard", "Real-time"],
-    "type": "web",
+    "tags": ["Unity", "2D", "Arcade", "Hypercasual", "Meme", "Mr Beast", "Mr Lean", "Mobile Game"],
+    "type": "game",
     "status": "completed",
-    "featured": true,
-    "github": "https://github.com/username/analytics-dashboard",
-    "demo": "https://analytics-dashboard-pro.vercel.app"
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Find-the-Beast",
+    "demo": "https://memegameswtf.github.io/FindTheBeast/"
   },
   {
     "id": 4,
