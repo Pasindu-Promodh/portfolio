@@ -15,7 +15,14 @@
     "media" : [
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF_GameIcon.png",
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(1).mp4",
-      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(2).mp4"
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(2).mp4",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0019.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0111.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0207.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0500.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0516.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0881.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0926.jpg"
     ]
   },
   {
@@ -42,7 +49,7 @@
     "status": "completed",
     "featured": false,
     "github": "https://github.com/ManeeshaG1/Find-the-Beast",
-    "demo": "https://memegameswtf.github.io/FindTheBeast/",
+    "demo": "https://maneeshag1.github.io/Find-the-Beast-Build/",
     "media" : [
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Find%20the%20beast/Movie_010.mp4"
     ]
