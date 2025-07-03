@@ -30,30 +30,47 @@
   "title": "Dilmah Legacy of the leaf",
   "description": "Cross-platform productivity app with real-time collaboration",
   "longDescription": "A comprehensive task management application built with React Native and TypeScript. Features real-time collaboration, offline sync, custom animations, push notifications, and intelligent task prioritization using machine learning algorithms. TaskFlow Mobile aims to revolutionize how teams manage their daily tasks, offering a seamless and intuitive user experience. It integrates with popular calendar apps and provides detailed analytics on productivity trends.",
-  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+  "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
   "tags": ["React Native", "TypeScript", "Firebase", "Machine Learning", "UX/UI", "Mobile Development", "Productivity"],
   "type": "mobile",
   "status": "completed",
   "featured": true,
-  "github": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-  "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-  "minigames": {
-    "total": 9,
-    "completed": 8,
-    "inProgress": 1,
-    "details": [
-      { "id": 1, "title": "Minigame 1", "status": "completed" },
-      { "id": 2, "title": "Minigame 2", "status": "completed" },
-      { "id": 3, "title": "Minigame 3", "status": "completed" },
-      { "id": 4, "title": "Minigame 4", "status": "completed" },
-      { "id": 5, "title": "Minigame 5", "status": "completed" },
-      { "id": 6, "title": "Minigame 6", "status": "completed" },
-      { "id": 7, "title": "Minigame 7", "status": "completed" },
-      { "id": 8, "title": "Minigame 8", "status": "completed" },
-      { "id": 9, "title": "Minigame 9", "status": "in progress" }
-    ]
-  }
+  "github": "https://github.com/username/taskflow-mobile",
+  "demo": "https://expo.dev/@username/taskflow",
+  
+  "minigames": [
+    {
+      "id": 1,
+      "title": "Minigame 1 Title",
+      "status": "completed",
+      "media": [
+        "https://link-to-media1.jpg",
+        "https://link-to-media2.mp4"
+      ],
+      "description": "Brief description of minigame 1"
+    },
+    {
+      "id": 2,
+      "title": "Minigame 2 Title",
+      "status": "completed",
+      "media": [
+        "https://link-to-media1.jpg"
+      ],
+      "description": "Brief description of minigame 2"
+    },
+    {
+      "id": 9,
+      "title": "Minigame 9 Title",
+      "status": "in progress",
+      "media": [
+        "https://link-to-media.jpg"
+      ],
+      "description": "Brief description of minigame 9"
+    }
+    
+  ]
 },
+
     {
       "id": 3,
       "title": "Frogged Out",
