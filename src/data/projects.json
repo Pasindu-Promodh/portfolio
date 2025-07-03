@@ -29,7 +29,7 @@
     "id": 2,
     "title": "Dilmah Legacy of the Leaf",
     "description": "Immersive mini-game collection exploring the heritage of tea through engaging challenges",
-    "longDescription": "Dilmah Legacy of the Leaf is an interactive mobile game featuring 9 thoughtfully crafted mini-games that bring to life the journey of tea from leaf to cup. Developed using Unity, this project was designed to engage users with stories of sustainability, craftsmanship, and flavor. 8 out of the 9 mini-games are completed, with the final one currently in progress.",
+    "longDescription": "Dilmah Legacy of the Leaf is an interactive mobile game featuring 9 thoughtfully crafted mini-games that bring to life the journey of tea from leaf to cup. Developed using Unity, this project was designed to engage users with stories of sustainability, craftsmanship, and flavor. 8 of the 9 mini-games are completed, and the final one is in progress.",
     "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
     "tags": ["Unity", "C#", "Mobile Game", "Mini-Games", "Storytelling", "UX Design", "Tea Culture"],
     "type": "mobile",
@@ -40,57 +40,57 @@
     "miniGames": [
       {
         "title": "Tea Pluckers' Dash",
-        "description": "Race against time to pluck the freshest tea leaves while avoiding wilted ones. Inspired by real tea gardens.",
+        "description": "Race through lush tea fields to pluck the freshest leaves while avoiding obstacles.",
         "status": "completed",
-        "media": "https://example.com/media/tea-pluckers-dash.gif"
+        "media": "https://yourdomain.com/media/tea-pluckers-dash.gif"
       },
       {
         "title": "Factory Sorter",
-        "description": "Sort tea leaves by quality in a fast-paced factory setting. Match them correctly to avoid quality issues.",
+        "description": "Sort tea leaves by quality as they rush down conveyor belts in a fast-paced puzzle.",
         "status": "completed",
-        "media": "https://example.com/media/factory-sorter.mp4"
+        "media": "https://yourdomain.com/media/factory-sorter.png"
       },
       {
         "title": "Flavor Mixer",
-        "description": "Combine herbs and flavors to create custom tea blends. Each combination tells a unique taste story.",
+        "description": "Mix and match ingredients to create the perfect Dilmah blend.",
         "status": "completed",
-        "media": "https://example.com/media/flavor-mixer.jpg"
+        "media": "https://yourdomain.com/media/flavor-mixer.mp4"
       },
       {
         "title": "Label Designer",
-        "description": "Design beautiful labels that represent each blend’s character. Mix art and brand storytelling.",
+        "description": "Unleash your creativity and design beautiful, thematic tea labels.",
         "status": "completed",
-        "media": "https://example.com/media/label-designer.png"
+        "media": "https://yourdomain.com/media/label-designer.jpg"
       },
       {
         "title": "Tea Tasting Challenge",
-        "description": "Test your palate by identifying different tea types based on color and aroma clues.",
+        "description": "Taste, identify, and rate teas based on aroma, flavor, and color.",
         "status": "completed",
-        "media": "https://example.com/media/tea-tasting-challenge.webm"
+        "media": "https://yourdomain.com/media/tea-tasting-challenge.webm"
       },
       {
         "title": "Heritage Puzzle",
-        "description": "Rebuild historical moments in Dilmah’s journey through jigsaw-style puzzles.",
+        "description": "Solve cultural and historical puzzles related to the origins of tea.",
         "status": "completed",
-        "media": "https://example.com/media/heritage-puzzle.jpg"
+        "media": "https://yourdomain.com/media/heritage-puzzle.png"
       },
       {
         "title": "Sustainability Sprint",
-        "description": "Guide tea delivery on eco-friendly routes, avoiding pollution and promoting green farming.",
+        "description": "Make fast eco-friendly choices to maintain a sustainable tea garden.",
         "status": "completed",
-        "media": "https://example.com/media/sustainability-sprint.gif"
+        "media": "https://yourdomain.com/media/sustainability-sprint.gif"
       },
       {
         "title": "Tea Quiz Master",
-        "description": "Answer questions about tea, sustainability, and Dilmah’s legacy in this educational mini-game.",
+        "description": "Test your knowledge of tea with a fast-paced, fun quiz game.",
         "status": "completed",
-        "media": "https://example.com/media/tea-quiz-master.png"
+        "media": "https://yourdomain.com/media/tea-quiz-master.jpg"
       },
       {
-        "title": "Mystery Game 9",
-        "description": "Currently in development. This final game will tie together the full tea journey experience.",
+        "title": "Final Brew (Coming Soon)",
+        "description": "A surprise final game that brings together everything you've learned.",
         "status": "in-progress",
-        "media": "https://example.com/media/coming-soon.jpg"
+        "media": "https://yourdomain.com/media/final-brew-placeholder.png"
       }
     ]
   },
