@@ -93,8 +93,21 @@
     "github": "https://github.com/ManeeshaG1/Meme-Infection",
     "demo": "https://maneeshag1.github.io/Meme-Infection-Build/"
   },
-  {
+    {
     "id": 7,
+    "title": "Hasbulla's Makeover",
+    "description": "Give Hasbulla an instant makeover—perfectly time the mustache drop!",
+    "longDescription": "Hasbulla's Makeover is a hilarious timing-based 2D Unity game where Hasbulla Magomedov’s iconic baby face awaits your touch of style. A cartoon mustache and wig swing left and right across his face, and it’s up to you to tap at the perfect moment. Land the accessories right where they belong to give Hasbulla an aged, gentlemanly look. Nail the alignment to score points, but miss—and it's a hilarious fail. Simple, absurd, and addictively fun.",
+    "image": "https://images.unsplash.com/photo-1587691592099-240067aa4681?w=1200&h=600&fit=crop",
+    "tags": ["Unity", "2D", "Casual", "Funny", "Timing", "Hasbulla"],
+    "type": "game",
+    "status": "completed",
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Brain-Rain",
+    "demo": "https://maneeshag1.github.io/Brain-Rain-Build/"
+  },
+  {
+    "id": 8,
     "title": "Brain Rain",
     "description": "Brains are falling. catch them or be left brainless in this viral meme-inspired reflex game.",
     "longDescription": "Brain Rain is a fun and fast-paced 2D Unity game inspired by the viral 'hey you dropped this 🧠' meme. Players control a stick figure character who must move left and right to catch falling brains. Miss a brain, and it's game over. With increasing difficulty and speed, this hypercasual game tests your reflexes while delivering meme-fueled humor. Designed for short, engaging sessions, it’s perfect for mobile or web platforms.",
