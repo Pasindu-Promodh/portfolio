@@ -25,75 +25,30 @@
         "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0926.jpg"
       ]
     },
-    {
-      "id": 2,
-      "title": "Dilmah Legacy of the Leaf",
-      "description": "Immersive mini-game collection exploring the heritage of tea through engaging challenges",
-      "longDescription": "Dilmah Legacy of the Leaf is an interactive mobile game featuring 9 thoughtfully crafted mini-games that bring to life the journey of tea from leaf to cup. Developed using Unity, this project was designed to engage users with stories of sustainability, craftsmanship, and flavor. 8 of the 9 mini-games are completed, and the final one is in progress.",
-      "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-      "tags": ["Unity", "C#", "Mobile Game", "Mini-Games", "Storytelling", "UX Design", "Tea Culture"],
-      "type": "mobile",
-      "status": "in-progress",
-      "featured": true,
-      "github": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-      "demo": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-      "miniGames": [
-        {
-          "title": "Tea Pluckers' Dash",
-          "description": "Race through lush tea fields to pluck the freshest leaves while avoiding obstacles.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Factory Sorter",
-          "description": "Sort tea leaves by quality as they rush down conveyor belts in a fast-paced puzzle.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Flavor Mixer",
-          "description": "Mix and match ingredients to create the perfect Dilmah blend.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Label Designer",
-          "description": "Unleash your creativity and design beautiful, thematic tea labels.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Tea Tasting Challenge",
-          "description": "Taste, identify, and rate teas based on aroma, flavor, and color.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Heritage Puzzle",
-          "description": "Solve cultural and historical puzzles related to the origins of tea.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Sustainability Sprint",
-          "description": "Make fast eco-friendly choices to maintain a sustainable tea garden.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Tea Quiz Master",
-          "description": "Test your knowledge of tea with a fast-paced, fun quiz game.",
-          "status": "completed",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        },
-        {
-          "title": "Final Brew (Coming Soon)",
-          "description": "A surprise final game that brings together everything you've learned.",
-          "status": "in-progress",
-          "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-        }
-      ]
-    },
+{
+  "id": 2,
+  "title": "Dilmah Legacy of the Leaf",
+  "description": "Immersive mini-game collection exploring the heritage of tea through engaging challenges",
+  "longDescription": "Dilmah Legacy of the Leaf is an interactive mobile game featuring 9 thoughtfully crafted mini-games that bring to life the journey of tea from leaf to cup. Developed using Unity, this project was designed to engage users with stories of sustainability, craftsmanship, and flavor. 8 out of the 9 mini-games are completed, with the final one currently in progress.",
+  "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
+  "tags": ["Unity", "C#", "Mobile Game", "Mini-Games", "Storytelling", "UX Design", "Tea Culture"],
+  "type": "mobile",
+  "status": "in-progress",
+  "featured": true,
+  "github": "https://github.com/username/dilmah-legacy",
+  "demo": "https://expo.dev/@username/dilmah-legacy",
+  "miniGames": [
+    { "title": "Tea Pluckers' Dash", "status": "completed" },
+    { "title": "Factory Sorter", "status": "completed" },
+    { "title": "Flavor Mixer", "status": "completed" },
+    { "title": "Label Designer", "status": "completed" },
+    { "title": "Tea Tasting Challenge", "status": "completed" },
+    { "title": "Heritage Puzzle", "status": "completed" },
+    { "title": "Sustainability Sprint", "status": "completed" },
+    { "title": "Tea Quiz Master", "status": "completed" },
+    { "title": "Mystery Game 9", "status": "in-progress" }
+  ]
+},
     {
       "id": 3,
       "title": "Frogged Out",
