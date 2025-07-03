@@ -34,15 +34,15 @@
       "status": "completed",
       "description": "Match tea leaves to create the perfect blend.",
       "media": [
-        "https://link-to-image.jpg",
-        "https://link-to-video.mp4"
+        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
       ]
     },
     {
       "title": "Caffeine Catch",
       "status": "in-progress",
       "description": "Collect caffeine molecules in a time-based arcade game.",
-      "media": []
+      "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"]
     }
   ]
 }
