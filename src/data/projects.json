@@ -28,51 +28,29 @@
 {
   "id": 2,
   "title": "Dilmah Legacy of the leaf",
-  "description": "Cross-platform productivity app with real-time collaboration",
-  "longDescription": "A comprehensive task management application built with React Native and TypeScript. Features real-time collaboration, offline sync, custom animations, push notifications, and intelligent task prioritization using machine learning algorithms. TaskFlow Mobile aims to revolutionize how teams manage their daily tasks, offering a seamless and intuitive user experience. It integrates with popular calendar apps and provides detailed analytics on productivity trends.",
+  "description": "Main game containing 9 minigames.",
+  "longDescription": "An educational mobile game series developed for Dilmah, consisting of 9 unique minigames focusing on tea, nature, and sustainability. Developed using Unity, tailored for school children and public engagement.",
   "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-  "tags": ["React Native", "TypeScript", "Firebase", "Machine Learning", "UX/UI", "Mobile Development", "Productivity"],
+  "tags": ["Unity", "Mobile Game", "Educational", "UX/UI"],
+  "type": "mobile",
+  "status": "in progress",
+  "featured": true
+},
+{
+  "id": 3,
+  "title": "Dilmah: Tea Trivia",
+  "description": "Answer tea-related questions before time runs out.",
+  "longDescription": "A fast-paced quiz game that challenges the player's knowledge about tea history, types, and health benefits. Designed with colorful UI and sound feedback.",
+  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+  "tags": ["Unity", "Quiz", "Educational"],
   "type": "mobile",
   "status": "completed",
-  "featured": true,
-  "github": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-  "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-  
-  "minigames": [
-    {
-      "id": 1,
-      "title": "Minigame 1 Title",
-      "status": "completed",
-      "media": [
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-      ],
-      "description": "Brief description of minigame 1"
-    },
-    {
-      "id": 2,
-      "title": "Minigame 2 Title",
-      "status": "completed",
-      "media": [
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-      ],
-      "description": "Brief description of minigame 2"
-    },
-    {
-      "id": 9,
-      "title": "Minigame 9 Title",
-      "status": "in progress",
-      "media": [
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-      ],
-      "description": "Brief description of minigame 9"
-    }
-    
-  ]
-},
+  "parent": "Dilmah Legacy of the leaf"
+}
+,
 
     {
-      "id": 3,
+      "id": 4,
       "title": "Frogged Out",
       "description": "Solve hilarious meme puzzles before time runs out!",
       "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
