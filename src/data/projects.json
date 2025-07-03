@@ -30,13 +30,13 @@
   "title": "Dilmah Legacy of the leaf",
   "description": "Cross-platform productivity app with real-time collaboration",
   "longDescription": "A comprehensive task management application built with React Native and TypeScript. Features real-time collaboration, offline sync, custom animations, push notifications, and intelligent task prioritization using machine learning algorithms. TaskFlow Mobile aims to revolutionize how teams manage their daily tasks, offering a seamless and intuitive user experience. It integrates with popular calendar apps and provides detailed analytics on productivity trends.",
-  "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
+  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
   "tags": ["React Native", "TypeScript", "Firebase", "Machine Learning", "UX/UI", "Mobile Development", "Productivity"],
   "type": "mobile",
   "status": "completed",
   "featured": true,
-  "github": "https://github.com/username/taskflow-mobile",
-  "demo": "https://expo.dev/@username/taskflow",
+  "github": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
+  "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
   
   "minigames": [
     {
@@ -44,8 +44,8 @@
       "title": "Minigame 1 Title",
       "status": "completed",
       "media": [
-        "https://link-to-media1.jpg",
-        "https://link-to-media2.mp4"
+        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
       ],
       "description": "Brief description of minigame 1"
     },
@@ -54,7 +54,7 @@
       "title": "Minigame 2 Title",
       "status": "completed",
       "media": [
-        "https://link-to-media1.jpg"
+        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
       ],
       "description": "Brief description of minigame 2"
     },
@@ -63,7 +63,7 @@
       "title": "Minigame 9 Title",
       "status": "in progress",
       "media": [
-        "https://link-to-media.jpg"
+        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
       ],
       "description": "Brief description of minigame 9"
     }
