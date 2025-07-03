@@ -27,27 +27,32 @@
     },
 {
   "id": 2,
-  "title": "Dilmah Legacy of the Leaf",
-  "description": "Immersive mini-game collection exploring the heritage of tea through engaging challenges",
-  "longDescription": "Dilmah Legacy of the Leaf is an interactive mobile game featuring 9 thoughtfully crafted mini-games that bring to life the journey of tea from leaf to cup. Developed using Unity, this project was designed to engage users with stories of sustainability, craftsmanship, and flavor. 8 out of the 9 mini-games are completed, with the final one currently in progress.",
-  "image": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-  "tags": ["Unity", "C#", "Mobile Game", "Mini-Games", "Storytelling", "UX Design", "Tea Culture"],
+  "title": "Dilmah Legacy of the leaf",
+  "description": "Cross-platform productivity app with real-time collaboration",
+  "longDescription": "A comprehensive task management application built with React Native and TypeScript. Features real-time collaboration, offline sync, custom animations, push notifications, and intelligent task prioritization using machine learning algorithms. TaskFlow Mobile aims to revolutionize how teams manage their daily tasks, offering a seamless and intuitive user experience. It integrates with popular calendar apps and provides detailed analytics on productivity trends.",
+  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+  "tags": ["React Native", "TypeScript", "Firebase", "Machine Learning", "UX/UI", "Mobile Development", "Productivity"],
   "type": "mobile",
-  "status": "in-progress",
+  "status": "completed",
   "featured": true,
   "github": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
   "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-  "miniGames": [
-    { "title": "Tea Pluckers' Dash", "status": "completed" },
-    { "title": "Factory Sorter", "status": "completed" },
-    { "title": "Flavor Mixer", "status": "completed" },
-    { "title": "Label Designer", "status": "completed" },
-    { "title": "Tea Tasting Challenge", "status": "completed" },
-    { "title": "Heritage Puzzle", "status": "completed" },
-    { "title": "Sustainability Sprint", "status": "completed" },
-    { "title": "Tea Quiz Master", "status": "completed" },
-    { "title": "Mystery Game 9", "status": "in-progress" }
-  ]
+  "minigames": {
+    "total": 9,
+    "completed": 8,
+    "inProgress": 1,
+    "details": [
+      { "id": 1, "title": "Minigame 1", "status": "completed" },
+      { "id": 2, "title": "Minigame 2", "status": "completed" },
+      { "id": 3, "title": "Minigame 3", "status": "completed" },
+      { "id": 4, "title": "Minigame 4", "status": "completed" },
+      { "id": 5, "title": "Minigame 5", "status": "completed" },
+      { "id": 6, "title": "Minigame 6", "status": "completed" },
+      { "id": 7, "title": "Minigame 7", "status": "completed" },
+      { "id": 8, "title": "Minigame 8", "status": "completed" },
+      { "id": 9, "title": "Minigame 9", "status": "in progress" }
+    ]
+  }
 },
     {
       "id": 3,
