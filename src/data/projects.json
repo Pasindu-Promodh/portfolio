@@ -28,29 +28,29 @@
 {
   "id": 2,
   "title": "Dilmah Legacy of the leaf",
-  "description": "Main game containing 9 minigames.",
-  "longDescription": "An educational mobile game series developed for Dilmah, consisting of 9 unique minigames focusing on tea, nature, and sustainability. Developed using Unity, tailored for school children and public engagement.",
-  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-  "tags": ["Unity", "Mobile Game", "Educational", "UX/UI"],
-  "type": "mobile",
-  "status": "in progress",
-  "featured": true
-},
-{
-  "id": 3,
-  "title": "Dilmah: Tea Trivia",
-  "description": "Answer tea-related questions before time runs out.",
-  "longDescription": "A fast-paced quiz game that challenges the player's knowledge about tea history, types, and health benefits. Designed with colorful UI and sound feedback.",
-  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-  "tags": ["Unity", "Quiz", "Educational"],
-  "type": "mobile",
-  "status": "completed",
-  "parent": "Dilmah Legacy of the leaf"
+  "minigames": [
+    {
+      "title": "Tea Time Puzzle",
+      "status": "completed",
+      "description": "Match tea leaves to create the perfect blend.",
+      "media": [
+        "https://link-to-image.jpg",
+        "https://link-to-video.mp4"
+      ]
+    },
+    {
+      "title": "Caffeine Catch",
+      "status": "in-progress",
+      "description": "Collect caffeine molecules in a time-based arcade game.",
+      "media": []
+    }
+  ]
 }
 ,
 
+
     {
-      "id": 4,
+      "id": 3,
       "title": "Frogged Out",
       "description": "Solve hilarious meme puzzles before time runs out!",
       "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
