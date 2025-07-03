@@ -38,8 +38,21 @@
     "github": "https://github.com/username/taskflow-mobile",
     "demo": "https://expo.dev/@username/taskflow"
   },
-  {
+    {
     "id": 3,
+    "title": "Jigsaw Memes",
+    "description": "Solve hilarious meme puzzles before time runs out!",
+    "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
+    "image": "https://images.unsplash.com/photo-1618314863539-0efb92c292a5?w=1200&h=600&fit=crop",
+    "tags": ["Unity", "2D", "Puzzle", "Memes", "Casual", "Jigsaw"],
+    "type": "game",
+    "status": "completed",
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Jigsaw-Memes",
+    "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
+  },
+  {
+    "id": 4,
     "title": "Find The Beast",
     "description": "A fast-paced meme-inspired 2D arcade game",
     "longDescription": "Find The Beast is a 2D hypercasual arcade game developed in Unity, inspired by viral internet memes of Mr. Beast and Mr. Lean. Players must quickly identify and tap on the real Mr. Beast as he moves among a swarm of identical-looking Mr. Lean faces. With each level, the game increases in speed and complexity—introducing more distractions and challenging the player's reflexes. Designed for quick, addictive gameplay and meme lovers, it's a perfect mix of humor and challenge.",
@@ -55,32 +68,33 @@
     ]
   },
   {
-    "id": 4,
-    "title": "Retro Arcade Collection",
-    "description": "HTML5 games built with Construct 2 engine",
-    "longDescription": "A collection of classic arcade-style games recreated using Construct 2. Includes Pac-Man inspired maze runner, Tetris-like puzzle game, and Space Invaders clone. All games feature modern graphics, sound effects, and mobile-responsive controls, providing a nostalgic yet fresh gaming experience directly in your browser. Each game is meticulously crafted to retain the charm of the originals while introducing quality-of-life improvements.",
+    "id": 5,
+    "title": "Dictator Sprint",
+    "description": "Fast-paced 2D runner where Aladeen shoots rivals on the track",
+    "longDescription": "Inspired by the movie 'The Dictator', Dictator Sprint is a hilarious and chaotic 2D Unity game where you play as General Aladeen sprinting down an Olympic track. As other runners try to overtake you, take them down with pinpoint shots to maintain your lead. With simple controls, exaggerated animations, and over-the-top action, this satirical arcade game delivers fast-paced fun and political absurdity in equal measure.",
     "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=600&fit=crop",
-    "tags": ["Construct 2", "HTML5", "Game Design", "Retro Gaming", "Arcade"],
+    "tags": ["Unity", "2D", "Arcade", "Runner", "Shooter", "Satire"],
     "type": "game",
     "status": "completed",
     "featured": false,
-    "demo": "https://retro-arcade-collection.netlify.app"
-  },
-  {
-    "id": 5,
-    "title": "E-Commerce Platform",
-    "description": "Full-stack e-commerce solution with admin panel",
-    "longDescription": "A complete e-commerce platform built with React frontend and Java Spring Boot backend. Features product catalog, shopping cart, payment integration, order management, inventory tracking, and comprehensive admin dashboard. This scalable solution is designed for small to medium businesses looking to establish a robust online presence. It includes secure user authentication, order fulfillment workflows, and detailed sales reports.",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop",
-    "tags": ["React", "Java", "Spring Boot", "MySQL", "Stripe", "Admin Panel", "E-commerce", "Full-stack"],
-    "type": "web",
-    "status": "completed",
-    "featured": false,
-    "github": "https://github.com/username/ecommerce-platform",
-    "demo": "https://ecommerce-demo.herokuapp.com"
+    "github": "https://github.com/ManeeshaG1/Supreme-Sprint",
+    "demo": "https://maneeshag1.github.io/Supreme-Sprint-Build/"
   },
   {
     "id": 6,
+    "title": "Meme Infection",
+    "description": "Tap to stop the zombie meme outbreak before it spreads!",
+    "longDescription": "Meme Infection is a fast-paced 2D strategy game where a single infected meme becomes patient zero in a viral zombie outbreak. As the infection spreads across your favorite meme characters—moving up, down, left, or right—you must act quickly. Tap or click on zombies to eliminate them before they infect the entire board. It's a race against time: wipe out all the zombies before the memes are lost forever!",
+    "image": "https://images.unsplash.com/photo-1618668896990-7f213bdc014c?w=1200&h=600&fit=crop",
+    "tags": ["2D", "Strategy", "Meme", "Zombie", "Arcade", "Unity"],
+    "type": "game",
+    "status": "completed",
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Meme-Infection",
+    "demo": "https://maneeshag1.github.io/Meme-Infection-Build/"
+  },
+  {
+    "id": 7,
     "title": "Brain Rain",
     "description": "Brains are falling. catch them or be left brainless in this viral meme-inspired reflex game.",
     "longDescription": "Brain Rain is a fun and fast-paced 2D Unity game inspired by the viral 'hey you dropped this 🧠' meme. Players control a stick figure character who must move left and right to catch falling brains. Miss a brain, and it's game over. With increasing difficulty and speed, this hypercasual game tests your reflexes while delivering meme-fueled humor. Designed for short, engaging sessions, it’s perfect for mobile or web platforms.",
