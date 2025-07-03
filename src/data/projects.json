@@ -27,19 +27,88 @@
   },
   {
     "id": 2,
-    "title": "TaskFlow Mobile",
-    "description": "Cross-platform productivity app with real-time collaboration",
-    "longDescription": "A comprehensive task management application built with React Native and TypeScript. Features real-time collaboration, offline sync, custom animations, push notifications, and intelligent task prioritization using machine learning algorithms. TaskFlow Mobile aims to revolutionize how teams manage their daily tasks, offering a seamless and intuitive user experience. It integrates with popular calendar apps and provides detailed analytics on productivity trends.",
+    "title": "Dilmah Legacy of the Leaf",
+    "description": "Immersive mini-game collection exploring the heritage of tea through engaging challenges",
+    "longDescription": "Dilmah Legacy of the Leaf is an interactive mobile game featuring 9 thoughtfully crafted mini-games that bring to life the journey of tea from leaf to cup. Developed using Unity, this project was designed to engage users with stories of sustainability, craftsmanship, and flavor. 8 out of the 9 mini-games are completed, with the final one currently in progress.",
     "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
-    "tags": ["React Native", "TypeScript", "Firebase", "Machine Learning", "UX/UI", "Mobile Development", "Productivity"],
+    "tags": ["Unity", "C#", "Mobile Game", "Mini-Games", "Storytelling", "UX Design", "Tea Culture"],
     "type": "mobile",
-    "status": "completed",
+    "status": "in-progress",
     "featured": true,
-    "github": "https://github.com/username/taskflow-mobile",
-    "demo": "https://expo.dev/@username/taskflow"
+    "github": "https://github.com/username/dilmah-legacy",
+    "demo": "https://expo.dev/@username/dilmah-legacy",
+    "miniGames": [
+      {
+        "title": "Tea Pluckers' Dash",
+        "description": "Race against time to pluck the freshest tea leaves while avoiding wilted ones. Inspired by real tea gardens.",
+        "status": "completed",
+        "media": "https://example.com/media/tea-pluckers-dash.gif"
+      },
+      {
+        "title": "Factory Sorter",
+        "description": "Sort tea leaves by quality in a fast-paced factory setting. Match them correctly to avoid quality issues.",
+        "status": "completed",
+        "media": "https://example.com/media/factory-sorter.mp4"
+      },
+      {
+        "title": "Flavor Mixer",
+        "description": "Combine herbs and flavors to create custom tea blends. Each combination tells a unique taste story.",
+        "status": "completed",
+        "media": "https://example.com/media/flavor-mixer.jpg"
+      },
+      {
+        "title": "Label Designer",
+        "description": "Design beautiful labels that represent each blend’s character. Mix art and brand storytelling.",
+        "status": "completed",
+        "media": "https://example.com/media/label-designer.png"
+      },
+      {
+        "title": "Tea Tasting Challenge",
+        "description": "Test your palate by identifying different tea types based on color and aroma clues.",
+        "status": "completed",
+        "media": "https://example.com/media/tea-tasting-challenge.webm"
+      },
+      {
+        "title": "Heritage Puzzle",
+        "description": "Rebuild historical moments in Dilmah’s journey through jigsaw-style puzzles.",
+        "status": "completed",
+        "media": "https://example.com/media/heritage-puzzle.jpg"
+      },
+      {
+        "title": "Sustainability Sprint",
+        "description": "Guide tea delivery on eco-friendly routes, avoiding pollution and promoting green farming.",
+        "status": "completed",
+        "media": "https://example.com/media/sustainability-sprint.gif"
+      },
+      {
+        "title": "Tea Quiz Master",
+        "description": "Answer questions about tea, sustainability, and Dilmah’s legacy in this educational mini-game.",
+        "status": "completed",
+        "media": "https://example.com/media/tea-quiz-master.png"
+      },
+      {
+        "title": "Mystery Game 9",
+        "description": "Currently in development. This final game will tie together the full tea journey experience.",
+        "status": "in-progress",
+        "media": "https://example.com/media/coming-soon.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Frogged Out",
+    "description": "Solve hilarious meme puzzles before time runs out!",
+    "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
+    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Jigsaw%20Memes/Jigsaw%20Memes.jpg",
+    "tags": ["Unity", "2D", "Puzzle", "Memes", "Casual", "Jigsaw"],
+    "type": "game",
+    "status": "completed",
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Jigsaw-Memes",
+    "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
   },
     {
-    "id": 3,
+    "id": 4,
     "title": "Jigsaw Memes",
     "description": "Solve hilarious meme puzzles before time runs out!",
     "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
@@ -52,7 +121,7 @@
     "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Find The Beast",
     "description": "A fast-paced meme-inspired 2D arcade game",
     "longDescription": "Find The Beast is a 2D hypercasual arcade game developed in Unity, inspired by viral internet memes of Mr. Beast and Mr. Lean. Players must quickly identify and tap on the real Mr. Beast as he moves among a swarm of identical-looking Mr. Lean faces. With each level, the game increases in speed and complexity—introducing more distractions and challenging the player's reflexes. Designed for quick, addictive gameplay and meme lovers, it's a perfect mix of humor and challenge.",
@@ -68,7 +137,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Dictator Sprint",
     "description": "Fast-paced 2D runner where Aladeen shoots rivals on the track",
     "longDescription": "Inspired by the movie 'The Dictator', Dictator Sprint is a hilarious and chaotic 2D Unity game where you play as General Aladeen sprinting down an Olympic track. As other runners try to overtake you, take them down with pinpoint shots to maintain your lead. With simple controls, exaggerated animations, and over-the-top action, this satirical arcade game delivers fast-paced fun and political absurdity in equal measure.",
@@ -81,7 +150,7 @@
     "demo": "https://maneeshag1.github.io/Supreme-Sprint-Build/"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Meme Infection",
     "description": "Tap to stop the zombie meme outbreak before it spreads!",
     "longDescription": "Meme Infection is a fast-paced 2D strategy game where a single infected meme becomes patient zero in a viral zombie outbreak. As the infection spreads across your favorite meme characters—moving up, down, left, or right—you must act quickly. Tap or click on zombies to eliminate them before they infect the entire board. It's a race against time: wipe out all the zombies before the memes are lost forever!",
@@ -94,7 +163,7 @@
     "demo": "https://maneeshag1.github.io/Meme-Infection-Build/"
   },
     {
-    "id": 7,
+    "id": 8,
     "title": "Hasbulla's Makeover",
     "description": "Give Hasbulla an instant makeover—perfectly time the mustache drop!",
     "longDescription": "Hasbulla's Makeover is a hilarious timing-based 2D Unity game where Hasbulla Magomedov’s iconic baby face awaits your touch of style. A cartoon mustache and wig swing left and right across his face, and it’s up to you to tap at the perfect moment. Land the accessories right where they belong to give Hasbulla an aged, gentlemanly look. Nail the alignment to score points, but miss—and it's a hilarious fail. Simple, absurd, and addictively fun.",
@@ -106,7 +175,7 @@
     "demo": "https://maneeshag1.github.io/Hasbullas-Makeover-Build/"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Brain Rain",
     "description": "Brains are falling. catch them or be left brainless in this viral meme-inspired reflex game.",
     "longDescription": "Brain Rain is a fun and fast-paced 2D Unity game inspired by the viral 'hey you dropped this 🧠' meme. Players control a stick figure character who must move left and right to catch falling brains. Miss a brain, and it's game over. With increasing difficulty and speed, this hypercasual game tests your reflexes while delivering meme-fueled humor. Designed for short, engaging sessions, it’s perfect for mobile or web platforms.",
