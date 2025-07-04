@@ -1,67 +1,113 @@
 [
-    {
-      "id": 1,
-      "title": "Fluffy's Flight",
-      "description": "Help Fluffy, the baby parrot, safely bounce down a spinning tree in this addictive arcade game! Built in Unity with multi-auth login, leaderboard, and ad monetization. Available on Google Play.",
-      "longDescription": "Fluffy's Flight is a charming arcade game that takes players on an endless descent with Fluffy, an adorable baby parrot, as it overcomes its fear of heights. Inspired by the core mechanics of Helix Jump, players swipe to rotate a 3D tree structure, guiding Fluffy through safe openings while avoiding broken bricks and gaps. Developed using Unity, I handled the complete game development cycle, from concept to deployment, including implementing physics-based movement, procedural level generation, and integrating multi-platform login, cloud save, and real-time leaderboards. The game also features monetization through Unity LevelPlay with IronSource and ad placements. Published successfully on the Google Play Store, Fluffy's Flight combines immersive gameplay, colorful visuals, and relaxing music to offer a skill-based, addictive experience suitable for all ages.",
-      "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-      "tags": ["Unity", "C#", "Arcade", "Mobile Game", "Endless", "3D", "Game Design"],
-      "type": "game",
-      "status": "completed",
-      "featured": true,
-      "github": "https://github.com/ManeeshaG1/Fluffys-Flight/",
-      "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-      "download": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-      "media" : [
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF_GameIcon.png",
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(1).mp4",
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(2).mp4",
-        "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0019.jpg",
-        "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0111.jpg",
-        "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0207.jpg",
-        "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0500.jpg",
-        "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0516.jpg",
-        "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0881.jpg",
-        "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0926.jpg"
-      ]
-    },
+  {
+    "id": 1,
+    "title": "Fluffy's Flight",
+    "description": "Help Fluffy, the baby parrot, safely bounce down a spinning tree in this addictive arcade game! Built in Unity with multi-auth login, leaderboard, and ad monetization. Available on Google Play.",
+    "longDescription": "Fluffy's Flight is a charming arcade game that takes players on an endless descent with Fluffy, an adorable baby parrot, as it overcomes its fear of heights. Inspired by the core mechanics of Helix Jump, players swipe to rotate a 3D tree structure, guiding Fluffy through safe openings while avoiding broken bricks and gaps. Developed using Unity, I handled the complete game development cycle, from concept to deployment, including implementing physics-based movement, procedural level generation, and integrating multi-platform login, cloud save, and real-time leaderboards. The game also features monetization through Unity LevelPlay with IronSource and ad placements. Published successfully on the Google Play Store, Fluffy's Flight combines immersive gameplay, colorful visuals, and relaxing music to offer a skill-based, addictive experience suitable for all ages.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+    "tags": ["Unity", "C#", "Arcade", "Mobile Game", "Endless", "3D", "Game Design"],
+    "type": "game",
+    "status": "completed",
+    "featured": true,
+    "github": "https://github.com/ManeeshaG1/Fluffys-Flight/",
+    "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
+    "download": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
+    "media" : [
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF_GameIcon.png",
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(1).mp4",
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(2).mp4",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0019.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0111.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0207.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0500.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0516.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0881.jpg",
+      "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0926.jpg"
+    ]
+  },
 {
   "id": 2,
-  "title": "Dilmah Legacy of the leaf",
-  "minigames": [
-    {
-      "title": "Tea Time Puzzle",
-      "status": "completed",
-      "description": "Match tea leaves to create the perfect blend.",
-      "media": [
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-        "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-      ]
-    },
-    {
-      "title": "Caffeine Catch",
-      "status": "in-progress",
-      "description": "Collect caffeine molecules in a time-based arcade game.",
-      "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"]
-    }
-  ]
-}
-,
+  "title": "Dilmah - Legacy of the Leaf",
+  "description": "Immersive 3D RPG adventure inspired by the story and values of Dilmah Tea.",
+  "longDescription": "A narrative-driven, 3D third-person RPG/adventure PC game co-developed with Nine Hermits Games for Dilmah Ceylon Tea Company PLC. Built in Unreal Engine, the game takes players through Sri Lanka’s tea heritage, emphasizing kindness, sustainability, and culture. Players engage in exploration and quests inspired by real-world tea practices, with environments modeled on the Dunkeld Tea Estate. I was responsible for designing and developing nine immersive minigames, quest systems, VFX, menus, and UI.",
+  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+  "tags": ["Unreal Engine", "RPG", "3D Game", "Narrative Design", "VFX", "Minigames", "Game UI", "Quest System"],
+  "type": "PC Game",
+  "status": "in development",
+  "featured": true,
+  "github": null,
+  "demo": null
+},
+[
+  {
+    "title": "Tea Harvest Rush",
+    "description": "Quick-reflex game where players pluck fresh tea buds before they wither.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Whirl & Whither",
+    "description": "Monitor temperature and humidity to perfect the withering process of tea leaves.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Rollin' & Infusin'",
+    "description": "Balance machine speed to roll tea leaves with precision and preserve flavor.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Steep & Sort",
+    "description": "Sort out low-quality tea leaves from a conveyor belt before they reach the basket.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Tea Grade Quest",
+    "description": "Classify tea grades on the conveyor accurately and swiftly to earn points.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Operator: Brew Division",
+    "description": "Drag wires to route recorded voice messages to the right tea departments.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Steep it Clean",
+    "description": "Filter out impurities from tea leaves on a moving belt with fast taps and swipes.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Pack it Right",
+    "description": "Fill and seal tea bags with perfect weight accuracy under time pressure.",
+    "status": "Completed",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  },
+  {
+    "title": "Prune Mother Tree",
+    "description": "Click at precise pruning points to maintain a healthy tea mother plant.",
+    "status": "In Progress",
+    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+  }
+],
 
-
-    {
-      "id": 3,
-      "title": "Frogged Out",
-      "description": "Solve hilarious meme puzzles before time runs out!",
-      "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
-      "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-      "tags": ["Unity", "2D", "Puzzle", "Memes", "Casual", "Jigsaw"],
-      "type": "game",
-      "status": "completed",
-      "featured": false,
-      "github": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-      "demo": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-    },
+  {
+    "id": 3,
+    "title": "Frogged Out",
+    "description": "Solve hilarious meme puzzles before time runs out!",
+    "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
+    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Jigsaw%20Memes/Jigsaw%20Memes.jpg",
+    "tags": ["Unity", "2D", "Puzzle", "Memes", "Casual", "Jigsaw"],
+    "type": "game",
+    "status": "completed",
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Jigsaw-Memes",
+    "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
+  },
     {
     "id": 4,
     "title": "Jigsaw Memes",

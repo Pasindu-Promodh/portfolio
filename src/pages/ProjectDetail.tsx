@@ -394,60 +394,6 @@ const ProjectDetail: React.FC = () => {
                 </Button>
               )}
             </Box>
-            {project.minigames && project.minigames.length > 0 && (
-  <Box sx={{ mt: 6 }}>
-    <Typography variant="h4" fontWeight="bold" gutterBottom>
-      Minigames
-    </Typography>
-    <Typography variant="body1" sx={{ mb: 3 }}>
-      Here are the mini experiences built as part of this project.
-    </Typography>
-    {project.minigames.map((game, index) => (
-      <Paper key={index} sx={{ mb: 4, p: 3, borderRadius: 2 }}>
-        <Typography variant="h6" fontWeight="bold">
-          {game.title}
-        </Typography>
-        <Chip
-          label={
-            game.status === "completed"
-              ? "✅ Completed"
-              : game.status === "in-progress"
-              ? "🚧 In Progress"
-              : game.status
-          }
-          sx={{ mt: 1, mb: 2 }}
-        />
-        <Typography variant="body1" sx={{ mb: 2 }}>
-          {game.description}
-        </Typography>
-        {game.media?.length > 0 && (
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
-            {game.media.map((url, i) =>
-              url.endsWith(".mp4") ? (
-                <Box
-                  key={i}
-                  component="video"
-                  src={url}
-                  controls
-                  sx={{ maxWidth: "300px", borderRadius: 2 }}
-                />
-              ) : (
-                <Box
-                  key={i}
-                  component="img"
-                  src={url}
-                  alt={`media-${i}`}
-                  sx={{ maxWidth: "300px", borderRadius: 2 }}
-                />
-              )
-            )}
-          </Box>
-        )}
-      </Paper>
-    ))}
-  </Box>
-)}
-
           </Paper>
 
           {/* Call to Action */}
