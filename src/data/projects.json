@@ -25,78 +25,121 @@
       "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0926.jpg"
     ]
   },
-{
-  "id": 2,
-  "title": "Dilmah - Legacy of the Leaf",
-  "description": "Immersive 3D RPG adventure inspired by the story and values of Dilmah Tea.",
-  "longDescription": "A narrative-driven, 3D third-person RPG/adventure PC game co-developed with Nine Hermits Games for Dilmah Ceylon Tea Company PLC. Built in Unreal Engine, the game takes players through Sri Lanka’s tea heritage, emphasizing kindness, sustainability, and culture. Players engage in exploration and quests inspired by real-world tea practices, with environments modeled on the Dunkeld Tea Estate. I was responsible for designing and developing nine immersive minigames, quest systems, VFX, menus, and UI.",
-  "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
-  "tags": ["Unreal Engine", "RPG", "3D Game", "Narrative Design", "VFX", "Minigames", "Game UI", "Quest System"],
-  "type": "PC Game",
-  "status": "in development",
-  "featured": true,
-  "github": null,
-  "demo": null
-},
-[
   {
-    "title": "Tea Harvest Rush",
-    "description": "Quick-reflex game where players pluck fresh tea buds before they wither.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
+    "id": 2,
+    "title": "Dilmah - Legacy of the Leaf",
+    "description": "Narrative-driven RPG that brings the story and values of Dilmah Tea to life.",
+    "longDescription": "A 3D third-person RPG/adventure PC title developed in Unreal Engine for Dilmah Ceylon Tea Company PLC, in collaboration with Nine Hermits Games. As a Junior Game Developer and Project Manager at this project, I contributed to crafting an immersive narrative experience that highlights Sri Lanka's tea culture, biodiversity, and Dilmah’s core values of kindness, authenticity, and sustainability. I co-developed the narrative-driven RPG adventure game, overseeing the entire development process as Project Manager. Set in a stylized yet realistic depiction of the Dunkeld Tea Estate, the gameplay blends exploration, character-driven storytelling, and quest-based progression. My responsibilities included designing and implementing nine interactive minigames (eight completed, one in development), and developing and designing the main menu, settings menu, quest system, and visual effects to support thematic storytelling. The project is currently unreleased and intended as a branded serious game for global audiences.",     "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+    "tags": ["Unreal Engine", "RPG", "3D Game", "Narrative", "PC Game", "Game Design", "Adventure"],
+    "type": "pc",
+    "status": "in development",
+    "featured": true,
+    "media": [""]
   },
-  {
-    "title": "Whirl & Whither",
-    "description": "Monitor temperature and humidity to perfect the withering process of tea leaves.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  },
-  {
-    "title": "Rollin' & Infusin'",
-    "description": "Balance machine speed to roll tea leaves with precision and preserve flavor.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  },
-  {
-    "title": "Steep & Sort",
-    "description": "Sort out low-quality tea leaves from a conveyor belt before they reach the basket.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  },
-  {
-    "title": "Tea Grade Quest",
-    "description": "Classify tea grades on the conveyor accurately and swiftly to earn points.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  },
-  {
-    "title": "Operator: Brew Division",
-    "description": "Drag wires to route recorded voice messages to the right tea departments.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  },
-  {
-    "title": "Steep it Clean",
-    "description": "Filter out impurities from tea leaves on a moving belt with fast taps and swipes.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  },
-  {
-    "title": "Pack it Right",
-    "description": "Fill and seal tea bags with perfect weight accuracy under time pressure.",
-    "status": "Completed",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  },
-  {
-    "title": "Prune Mother Tree",
-    "description": "Click at precise pruning points to maintain a healthy tea mother plant.",
-    "status": "In Progress",
-    "media": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png"
-  }
-],
 
   {
     "id": 3,
+    "title": "Tea Plucking Game - Tea Harvest Rush",
+    "description": "Quickly pluck tea buds as they bloom on the bushes.",
+    "longDescription": "Players must react fast as tea buds bloom randomly and briefly on-screen. Click them before they wither to collect as many as possible before time runs out. A fast-paced, reflex-based game to simulate the tea plucking experience.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Plucking.png?raw=true",
+    "tags": ["Mini Game", "Reflex", "Tea", "Harvest"],
+    "type": "minigame",
+    "status": "completed",
+    "media" : ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Plucking.mp4"]
+  },
+  {
+    "id": 4,
+    "title": "Leaves Withering Game - Whirl & Whither",
+    "description": "Control temperature and humidity to wither tea leaves perfectly.",
+    "longDescription": "Maintain optimal temperature and humidity inside a withering machine. Players must monitor changing conditions and adjust dials in real time to ensure high-quality leaf processing without damaging the batch.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Wither.png?raw=true",
+    "tags": ["Mini Game", "Simulation", "Withering", "Balance"],
+    "type": "minigame",
+    "status": "completed",
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Withering.mp4"]
+  },
+  {
+    "id": 5,
+    "title": "Leaves Rolling Game - Rollin' & Infusin'",
+    "description": "Control the speed of the tea rolling machine to preserve flavor.",
+    "longDescription": "Operate a rolling machine and adjust its speed in real time to ensure the tea leaves are rolled just right—not crushed, not loose. Visual indicators guide the player to avoid under- or over-processing the leaves.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Roll.png?raw=true",
+    "tags": ["Mini Game", "Timing", "Tea Processing", "Speed Control"],
+    "type": "minigame",
+    "status": "completed",
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Rolling.mp4"]
+  },
+  {
+    "id": 6,
+    "title": "Leaves Selection Game - Steep & Sort",
+    "description": "Sort out low-quality tea leaves on a fast-moving belt.",
+    "longDescription": "A conveyor belt delivers a mix of tea leaf grades. Players must remove the poor-quality leaves while letting good and medium ones pass. Scoring depends on accuracy and speed, simulating real-life tea sorting.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Sorting.png?raw=true",
+    "tags": ["Mini Game", "Sorting", "Speed", "Precision"],
+    "type": "minigame",
+    "status": "completed",
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Sorting.mp4"]
+  },
+  {
+    "id": 7,
+    "title": "Tea Grading Game - Tea Grade Quest",
+    "description": "Match moving boxes to their correct tea grade labels.",
+    "longDescription": "Boxes labeled with BOP, BOPF, Dust, and other grades appear on a belt. Players must identify and route each to its correct bin using fast recognition and matching skills under time pressure.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Grade.png?raw=true",
+    "tags": ["Mini Game", "Recognition", "Grading", "Sorting"],
+    "type": "minigame",
+    "status": "completed",
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Grading.mp4"]
+  },
+  {
+    "id": 8,
+    "title": "Telephone Wire Connecting Game - Operator: Brew Division",
+    "description": "Connect voice messages to the right department using a vintage switchboard.",
+    "longDescription": "Players listen to voice messages and connect each to the right department—Denawaka Bungalow, Nursery, Founder, etc.—by dragging wires to sockets. A fast-paced memory and decision-making challenge.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Tele.png?raw=true",
+    "tags": ["Mini Game", "Puzzle", "Memory", "Switchboard"],
+    "type": "minigame",
+    "status": "completed",
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Telephone.mp4"]
+  },
+  {
+    "id": 9,
+    "title": "Leaves Waste Filtering Game - Steep It Clean",
+    "description": "Filter out impurities from tea leaves on a moving line.",
+    "longDescription": "Inspect tea leaves mixed with debris like rocks and twigs. Players must quickly remove the impurities as they pass on a belt to ensure purity for the next stage of processing.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Wastefil.png?raw=true",
+    "tags": ["Mini Game", "Filtering", "Precision", "Cleanliness"],
+    "type": "minigame",
+    "status": "completed",
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Waste%20Filtering.mp4"]
+  },
+  {
+    "id": 10,
+    "title": "Tea Packing Game - Pack It Right",
+    "description": "Pack tea bags to exactly 50 kg for maximum points.",
+    "longDescription": "Players must stop the filling process at precisely 50 kg per tea bag. Scoring is based on precision, with bonus points for perfect weight. A balance of speed, focus, and timing is key.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Pack.png?raw=true",
+    "tags": ["Mini Game", "Precision", "Packing", "Timing"],
+    "type": "minigame",
+    "status": "completed",
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Packing.mp4"]
+  },
+  {
+    "id": 11,
+    "title": "Prune Mother Tree Game",
+    "description": "Carefully prune tea shoots at ideal points to keep trees healthy.",
+    "longDescription": "Shoots appear randomly on the tea tree. Players must react quickly to prune them cleanly before they grow too much. Every correct prune helps tree health, while missed shoots reduce the score. This minigame is still in progress.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Pruning1.png?raw=true",
+    "tags": ["Mini Game", "Timing", "Tree Care", "Work in Progress"],
+    "type": "minigame",
+    "status": "in progress",
+    "media": [
+      "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/SS/Pruning.png?raw=true",
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Dilmah/Pruning.mp4"]
+  },
+  {
+    "id": 12,
     "title": "Frogged Out",
     "description": "Solve hilarious meme puzzles before time runs out!",
     "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
@@ -109,7 +152,7 @@
     "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
   },
     {
-    "id": 4,
+    "id": 13,
     "title": "Jigsaw Memes",
     "description": "Solve hilarious meme puzzles before time runs out!",
     "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
@@ -122,7 +165,7 @@
     "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
   },
   {
-    "id": 5,
+    "id": 14,
     "title": "Find The Beast",
     "description": "A fast-paced meme-inspired 2D arcade game",
     "longDescription": "Find The Beast is a 2D hypercasual arcade game developed in Unity, inspired by viral internet memes of Mr. Beast and Mr. Lean. Players must quickly identify and tap on the real Mr. Beast as he moves among a swarm of identical-looking Mr. Lean faces. With each level, the game increases in speed and complexity—introducing more distractions and challenging the player's reflexes. Designed for quick, addictive gameplay and meme lovers, it's a perfect mix of humor and challenge.",
@@ -138,7 +181,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 15,
     "title": "Dictator Sprint",
     "description": "Fast-paced 2D runner where Aladeen shoots rivals on the track",
     "longDescription": "Inspired by the movie 'The Dictator', Dictator Sprint is a hilarious and chaotic 2D Unity game where you play as General Aladeen sprinting down an Olympic track. As other runners try to overtake you, take them down with pinpoint shots to maintain your lead. With simple controls, exaggerated animations, and over-the-top action, this satirical arcade game delivers fast-paced fun and political absurdity in equal measure.",
@@ -151,7 +194,7 @@
     "demo": "https://maneeshag1.github.io/Supreme-Sprint-Build/"
   },
   {
-    "id": 7,
+    "id": 16,
     "title": "Meme Infection",
     "description": "Tap to stop the zombie meme outbreak before it spreads!",
     "longDescription": "Meme Infection is a fast-paced 2D strategy game where a single infected meme becomes patient zero in a viral zombie outbreak. As the infection spreads across your favorite meme characters—moving up, down, left, or right—you must act quickly. Tap or click on zombies to eliminate them before they infect the entire board. It's a race against time: wipe out all the zombies before the memes are lost forever!",
@@ -164,7 +207,7 @@
     "demo": "https://maneeshag1.github.io/Meme-Infection-Build/"
   },
     {
-    "id": 8,
+    "id": 17,
     "title": "Hasbulla's Makeover",
     "description": "Give Hasbulla an instant makeover—perfectly time the mustache drop!",
     "longDescription": "Hasbulla's Makeover is a hilarious timing-based 2D Unity game where Hasbulla Magomedov’s iconic baby face awaits your touch of style. A cartoon mustache and wig swing left and right across his face, and it’s up to you to tap at the perfect moment. Land the accessories right where they belong to give Hasbulla an aged, gentlemanly look. Nail the alignment to score points, but miss—and it's a hilarious fail. Simple, absurd, and addictively fun.",
@@ -176,7 +219,7 @@
     "demo": "https://maneeshag1.github.io/Hasbullas-Makeover-Build/"
   },
   {
-    "id": 9,
+    "id": 18,
     "title": "Brain Rain",
     "description": "Brains are falling. catch them or be left brainless in this viral meme-inspired reflex game.",
     "longDescription": "Brain Rain is a fun and fast-paced 2D Unity game inspired by the viral 'hey you dropped this 🧠' meme. Players control a stick figure character who must move left and right to catch falling brains. Miss a brain, and it's game over. With increasing difficulty and speed, this hypercasual game tests your reflexes while delivering meme-fueled humor. Designed for short, engaging sessions, it’s perfect for mobile or web platforms.",
