@@ -12,7 +12,7 @@
     "github": "https://github.com/ManeeshaG1/Fluffys-Flight/",
     "demo": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
     "download": "https://play.google.com/store/apps/details?id=com.BoomerBrainLabs.FluffysFlight",
-    "media" : [
+    "media": [
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF_GameIcon.png",
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(1).mp4",
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/Fluffy%20Flight%20Screen%20Recording%20(2).mp4",
@@ -23,6 +23,14 @@
       "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0516.jpg",
       "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0881.jpg",
       "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Fluffy%20Flight/Image%20Sequence_004_0926.jpg"
+    ],
+    "features": [
+      "3D endless gameplay",
+      "Physics-based movement",
+      "Procedural level generation",
+      "Multi-platform login support",
+      "Leaderboard integration",
+      "Ad monetization with IronSource"
     ]
   },
   {

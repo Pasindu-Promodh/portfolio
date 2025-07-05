@@ -327,6 +327,23 @@ const ProjectDetail: React.FC = () => {
               {project.longDescription}
             </Typography>
 
+            {project.features && project.features.length > 0 && (
+              <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" fontWeight="bold" gutterBottom>
+                  Key Features
+                </Typography>
+                <Box component="ul" sx={{ pl: 3, lineHeight: 1.8 }}>
+                  {project.features.map((feature, index) => (
+                    <li key={index}>
+                      <Typography variant="body1" component="span">
+                        {feature}
+                      </Typography>
+                    </li>
+                  ))}
+                </Box>
+              </Box>
+            )}
+
             <Divider sx={{ my: 4 }} />
 
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 4 }}>
