@@ -301,69 +301,77 @@ const Home: React.FC = () => {
           </Typography>
 
           <Grid container spacing={4}>
-            {projects.map((project) => (
-              <Grid size={{ xs: 12, md: 4 }} key={project.title}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    cursor: "pointer",
-                    transition: "transform 0.3s, box-shadow 0.3s",
-                    "&:hover": {
-                      transform: "translateY(-8px)",
-                      boxShadow: "0 16px 32px rgba(0,0,0,0.15)",
-                    },
-                  }}
-                  onClick={() => gotoPage("/project", project.id)}
-                >
-                  <CardMedia
-                    component="img"
-                    // height="200"
+            {projects
+              .filter((project) => project.featured)
+              .map((project) => (
+                <Grid size={{ xs: 12, md: 4 }} key={project.title}>
+                  <Card
                     sx={{
-                      aspectRatio: "16/9",
-                    }}
-                    image={project.image}
-                    alt={project.title}
-                  />
-                  <CardContent
-                    sx={{
-                      flexGrow: 1,
+                      height: "100%",
                       display: "flex",
                       flexDirection: "column",
+                      cursor: "pointer",
+                      transition: "transform 0.3s, box-shadow 0.3s",
+                      "&:hover": {
+                        transform: "translateY(-8px)",
+                        boxShadow: "0 16px 32px rgba(0,0,0,0.15)",
+                      },
                     }}
+                    onClick={() => gotoPage("/project", project.id)}
                   >
-                    <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-                      {getProjectIcon(project.type)}
-                      <Typography variant="h6" fontWeight="bold" sx={{ ml: 1 }}>
-                        {project.title}
-                      </Typography>
-                    </Box>
-                    <Typography
-                      color="text.secondary"
-                      paragraph
-                      sx={{ flexGrow: 1 }}
-                    >
-                      {project.description}
-                    </Typography>
-                    <Box
+                    <CardMedia
+                      component="img"
+                      // height="200"
                       sx={{
+                        aspectRatio: "16/9",
+                      }}
+                      image={project.image}
+                      alt={project.title}
+                    />
+                    <CardContent
+                      sx={{
+                        flexGrow: 1,
                         display: "flex",
-                        flexWrap: "wrap",
-                        gap: 1,
-                        mb: 2,
+                        flexDirection: "column",
                       }}
                     >
-                      {project.tags.map((tag) => (
-                        <Chip
-                          key={tag}
-                          label={tag}
-                          size="small"
-                          variant="outlined"
-                        />
-                      ))}
-                    </Box>
-                    {/* <Button
+                      <Box
+                        sx={{ display: "flex", alignItems: "center", mb: 2 }}
+                      >
+                        {getProjectIcon(project.type)}
+                        <Typography
+                          variant="h6"
+                          fontWeight="bold"
+                          sx={{ ml: 1 }}
+                        >
+                          {project.title}
+                        </Typography>
+                      </Box>
+                      <Typography
+                        color="text.secondary"
+                        paragraph
+                        sx={{ flexGrow: 1 }}
+                      >
+                        {project.description}
+                      </Typography>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexWrap: "wrap",
+                          gap: 1,
+                          mb: 2,
+                        }}
+                      >
+                        {project.tags.map((tag) => (
+                          <Chip
+                            key={tag}
+                            label={tag}
+                            size="small"
+                            variant="outlined"
+                          />
+                        ))}
+                      </Box>
+                      {/* <Button
                         variant="text"
                         endIcon={<PlayArrow />}
                         sx={{ alignSelf: "flex-start" }}
@@ -371,10 +379,10 @@ const Home: React.FC = () => {
                       >
                         View Project
                       </Button> */}
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
           </Grid>
 
           {/* View All Projects Button */}
