@@ -33,10 +33,10 @@ const ProjectDetail: React.FC = () => {
   const navigate = useNavigate();
 
   const [loaded, setLoaded] = useState(false);
-  const [fullscreenImage, setFullscreenImage] = React.useState<string | null>(
+  const [fullscreenImage, setFullscreenImage] = useState<string | null>(
     null
   );
-  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     setLoaded(true);
