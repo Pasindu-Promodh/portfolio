@@ -226,7 +226,7 @@
     "tags": ["Unity", "2D", "Puzzle", "Memes", "Casual", "Jigsaw"],
     "type": "mobile",
     "status": "completed",
-    "featured": false,
+    "featured": true,
     "github": "https://github.com/ManeeshaG1/2048",
     "demo": "https://maneeshag1.github.io/2048/",
     "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Froggy/Frogged%20Out%20005.mp4"]
