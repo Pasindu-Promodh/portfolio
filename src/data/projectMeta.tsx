@@ -1,16 +1,11 @@
-// projectMeta.ts
-
 import {
   Code,
   PhoneIphone,
   Public,
   SportsEsports,
+  ViewInAr, // Import an icon representing 3D
 } from "@mui/icons-material";
-import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-import ViewInArIcon from '@mui/icons-material/ViewInAr';
 
-
-// Central definition of project types
 const projectMeta = [
   {
     label: "All Projects",
@@ -30,19 +25,18 @@ const projectMeta = [
     icon: <PhoneIphone />,
     includeInTabs: true,
   },
-{
-  label: "3D Models",
-  value: "model",
-  icon: <ViewInArIcon />,
-  includeInTabs: true,
-},
-{
-  label: "Visual Effects",
-  value: "vfx",
-  icon: <AutoAwesomeIcon />,
-  includeInTabs: true,
-},
-
+  {
+    label: "Web Apps",
+    value: "web",
+    icon: <Public />,
+    includeInTabs: true,
+  },
+  {
+    label: "3D Models",
+    value: "3d",
+    icon: <ViewInAr />, // AR/3D cube icon
+    includeInTabs: true,
+  },
 ];
 
 export default projectMeta;
