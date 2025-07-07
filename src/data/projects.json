@@ -314,14 +314,17 @@
     "github": "https://github.com/ManeeshaG1/Brain-Rain",
     "demo": "https://maneeshag1.github.io/Brain-Rain-Build/"
   },
-    {
+  {
     "id": 21,
-    "title": "Fire Empowering Effect and Flame Throw Attack",
-    "description": "Fire-based combat VFX showcasing power-up and attack phases.",
-    "longDescription": "A real-time visual effects project demonstrating a fire-based empowerment effect followed by a dynamic flame throw attack. Developed using a game engine's particle system and Niagara/VFX Graph techniques, the effect features visual buildup, color intensity shifts, impact bursts, and directional fire streaming. Designed to enhance combat feedback and character ability animations in action RPGs or fantasy-themed games.",
-    "tags": ["Unity", "Realistic", "Visual Effects", "Combat FX", "Real-Time FX", "VFX"],
+    "title": "Brain Rain",
+    "description": "Brains are falling. catch them or be left brainless in this viral meme-inspired reflex game.",
+    "longDescription": "Brain Rain is a fun and fast-paced 2D Unity game inspired by the viral 'hey you dropped this 🧠' meme. Players control a stick figure character who must move left and right to catch falling brains. Miss a brain, and it's game over. With increasing difficulty and speed, this hypercasual game tests your reflexes while delivering meme-fueled humor. Designed for short, engaging sessions, it’s perfect for mobile or web platforms.",
+    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Brain%20Rain/Brain%20Rian.jpg",
+    "tags": ["Unity", "2D", "Hypercasual", "Arcade", "Meme", "Stickman", "Catch Game", "Mobile Game"],
     "type": "game",
     "status": "completed",
-    "featured": false
+    "featured": false,
+    "github": "https://github.com/ManeeshaG1/Brain-Rain",
+    "demo": "https://maneeshag1.github.io/Brain-Rain-Build/"
   }
 ]
