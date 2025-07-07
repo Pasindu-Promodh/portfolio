@@ -322,10 +322,7 @@
   "tags": ["Visual Effects", "VFX", "Unity","Real-Time FX", "Combat FX"],
   "type": "3d",
   "status": "completed",
-  "featured": true,
-  "media": [
-    "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/VFX/Fire%20Empowering%20Effect%20And%20Flame%20Throw%20Attack.mp4"
-  ]
+  "featured": true
 }
 
 
