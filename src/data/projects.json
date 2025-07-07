@@ -320,7 +320,7 @@
   "description": "Fire-based combat VFX showcasing power-up and attack phases.",
   "longDescription": "A real-time visual effects project demonstrating a fire-based empowerment effect followed by a dynamic flame throw attack. Developed using a game engine's particle system and Niagara/VFX Graph techniques, the effect features visual buildup, color intensity shifts, impact bursts, and directional fire streaming. Designed to enhance combat feedback and character ability animations in action RPGs or fantasy-themed games.",
   "tags": ["Visual Effects", "VFX", "Unity","Real-Time FX", "Combat FX"],
-  "type": "vfx",
+  "type": "game",
   "status": "completed",
   "featured": true,
   "media": [
