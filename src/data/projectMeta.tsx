@@ -3,6 +3,8 @@
 import {
   Code,
   PhoneIphone,
+  ViewInAr,
+  AutoAwesome,
   Public,
   SportsEsports,
 } from "@mui/icons-material";
