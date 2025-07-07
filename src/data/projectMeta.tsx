@@ -3,7 +3,8 @@ import {
   PhoneIphone,
   Public,
   SportsEsports,
-  ViewInAr, // Import an icon representing 3D
+  AutoAwesome, 
+  ViewInAr, 
 } from "@mui/icons-material";
 
 const projectMeta = [
@@ -34,7 +35,13 @@ const projectMeta = [
   {
     label: "3D Models",
     value: "3d",
-    icon: <ViewInAr />, // AR/3D cube icon
+    icon: <ViewInAr />, 
+    includeInTabs: true,
+  },
+    {
+    label: "Visual Effects",
+    value: "vfx",
+    icon: <AutoAwesome />,
     includeInTabs: true,
   },
 ];
