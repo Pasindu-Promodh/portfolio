@@ -3,6 +3,7 @@ import {
   PhoneIphone,
   Public,
   SportsEsports, 
+  AutoAwesome, 
   ViewInAr, 
 } from "@mui/icons-material";
 
@@ -37,7 +38,12 @@ const projectMeta = [
     icon: <ViewInAr />, 
     includeInTabs: true,
   },
-
+  {
+    label: "Visual Effects",
+    value: "vfx",
+    icon: <AutoAwesome />,
+    includeInTabs: true,
+  },
 ];
 
 export default projectMeta;
