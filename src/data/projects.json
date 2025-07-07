@@ -313,5 +313,19 @@
     "featured": false,
     "github": "https://github.com/ManeeshaG1/Brain-Rain",
     "demo": "https://maneeshag1.github.io/Brain-Rain-Build/"
-  }
+  },
+  {
+  "id": 21,
+  "title": "Fire Empowering Effect and Flame Throw Attack",
+  "description": "Fire-based combat VFX showcasing power-up and attack phases.",
+  "longDescription": "A real-time visual effects project demonstrating a fire-based empowerment effect followed by a dynamic flame throw attack. Developed using a game engine's particle system and Niagara/VFX Graph techniques, the effect features visual buildup, color intensity shifts, impact bursts, and directional fire streaming. Designed to enhance combat feedback and character ability animations in action RPGs or fantasy-themed games.",
+  "tags": ["Visual Effects", "VFX", "Unity","Real-Time FX", "Combat FX"],
+  "type": "vfx",
+  "status": "completed",
+  "featured": true,
+  "media": [
+    "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/VFX/Fire%20Empowering%20Effect%20And%20Flame%20Throw%20Attack.mp4"
+  ]
+}
+
 ]
