@@ -322,10 +322,7 @@
   "tags": ["Visual Effects", "VFX", "Unity","Real-Time FX", "Combat FX"],
   "type": "game",
   "status": "completed",
-  "featured": true,
-  "media": [
-    ""
-  ]
+  "featured": true
 }
 
 ]
