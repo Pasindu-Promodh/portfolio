@@ -28,9 +28,15 @@ const projectMeta = [
     includeInTabs: true,
   },
   {
-    label: "Web Apps",
-    value: "web",
-    icon: <Public />,
+    label: "3D Models",
+    value: "model",
+    icon: <ViewInAr />,
+    includeInTabs: true,
+  },
+  {
+    label: "Visual Effects",
+    value: "vfx",
+    icon: <AutoAwesome />,
     includeInTabs: true,
   },
 ];

@@ -37,7 +37,8 @@
       "id": 2,
       "title": "Dilmah - Legacy of the Leaf",
       "description": "Narrative-driven RPG that brings the story and values of Dilmah Tea to life.",
-      "longDescription": "A 3D third-person RPG/adventure PC title developed in Unreal Engine for Dilmah Ceylon Tea Company PLC, in collaboration with Nine Hermits Games. As a Junior Game Developer and Project Manager at this project, I contributed to crafting an immersive narrative experience that highlights Sri Lanka's tea culture, biodiversity, and Dilmah’s core values of kindness, authenticity, and sustainability. I co-developed the narrative-driven RPG adventure game, overseeing the entire development process as Project Manager. Set in a stylized yet realistic depiction of the Dunkeld Tea Estate, the gameplay blends exploration, character-driven storytelling, and quest-based progression. My responsibilities included designing and implementing nine interactive minigames (eight completed, one in development), and developing and designing the main menu, settings menu, quest system, and visual effects to support thematic storytelling. The project is currently unreleased and intended as a branded serious game for global audiences.",     "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+      "longDescription": "A 3D third-person RPG/adventure PC title developed in Unreal Engine for Dilmah Ceylon Tea Company PLC, in collaboration with Nine Hermits Games. As a Junior Game Developer and Project Manager at this project, I contributed to crafting an immersive narrative experience that highlights Sri Lanka's tea culture, biodiversity, and Dilmah’s core values of kindness, authenticity, and sustainability. I co-developed the narrative-driven RPG adventure game, overseeing the entire development process as Project Manager. Set in a stylized yet realistic depiction of the Dunkeld Tea Estate, the gameplay blends exploration, character-driven storytelling, and quest-based progression. My responsibilities included designing and implementing nine interactive minigames (eight completed, one in development), and developing and designing the main menu, settings menu, quest system, and visual effects to support thematic storytelling. The project is currently unreleased and intended as a branded serious game for global audiences.",     
+      "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
       "tags": ["Unreal Engine", "RPG", "3D Game", "Narrative", "PC Game", "Game Design", "Adventure"],
       "type": "game",
       "status": "in development",
@@ -220,16 +221,16 @@
     {
     "id": 14,
     "title": "2048 Game",
-    "description": "Solve hilarious meme puzzles before time runs out!",
-    "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
-    "image": "https://raw.githubusercontent.com/Pasindu-Promodh/portfolio/main/public/Jigsaw%20Memes/Jigsaw%20Memes.jpg",
-    "tags": ["Unity", "2D", "Puzzle", "Memes", "Casual", "Jigsaw"],
+    "description": "3D version of the classic 2048 puzzle game, built in Unity.",
+    "longDescription": "A 3D take on the popular 2048 puzzle game, developed using Unity. Players combine numbered tiles on a grid by sliding them in four directions to reach the 2048 tile and beyond. The 3D visuals add depth and polish to the classic gameplay, creating an engaging puzzle experience suitable for mobile and desktop platforms.",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/2048/2048.png?raw=true",
+    "tags": ["Unity", "3D", "Puzzle", "Casual", "Mobile", "Game Development"],
     "type": "mobile",
     "status": "completed",
     "featured": true,
     "github": "https://github.com/ManeeshaG1/2048",
     "demo": "https://maneeshag1.github.io/2048/",
-    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Froggy/Frogged%20Out%20005.mp4"]
+    "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/2048/Movie%20002.mp4"]
   },
     {
     "id": 15,
