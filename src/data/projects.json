@@ -211,8 +211,6 @@
     "type": "game",
     "status": "in progress",
     "featured": true,
-    "github": "https://github.com/ManeeshaG1/Frogged-Out",
-    "demo": "https://maneeshag1.github.io/Frogged-Out-Build/",
     "media": [
     "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Library/maneesha-goonetilleke-screenshot-36.jpg?raw=true",
     "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Library/maneesha-goonetilleke-whatsapp-image-2023-03-09-at-21-57-50.jpg?raw=true",
@@ -336,5 +334,24 @@
     "media" : [
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/VFX/Fire%20Empowering%20Effect%20And%20Flame%20Throw%20Attack.mp4"
     ]
-  }
+  },
+{
+  "id": 22,
+  "title": "Sci-Fi Indigenous Echo Echo – 3D Model",
+  "description": "A custom 3D character reinterpretation of Echo Echo from Ben 10 with a sci-fi indigenous twist.",
+  "longDescription": "This project features a reimagined version of Echo Echo from the Ben 10 series, designed with a sci-fi indigenous theme. I created the model in Blender, focusing on stylized mechanical anatomy and cultural design elements. The character was fully rigged and brought to life with animations using Cinema 4D. The goal was to blend familiar cartoon aesthetics with a futuristic tribal look, suitable for games or cinematic sequences.",
+  "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/VFX/Screenshot%20(35).png?raw=true",  
+  "tags": ["3D Modeling", "Blender", "Cinema 4D", "Character Design", "Animation", "Echo Echo", "Fan Art"],
+  "type": "3d",
+  "status": "completed",
+  "featured": false,
+  "media": [""],
+  "features": [
+    "Stylized Sci-Fi/Indigenous Fusion Design",
+    "Inspired by Ben 10's Echo Echo",
+    "Suitable for Games or Animation"
+  ]
+}
+
+
 ]
