@@ -334,24 +334,5 @@
     "media" : [
       "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/VFX/Fire%20Empowering%20Effect%20And%20Flame%20Throw%20Attack.mp4"
     ]
-  },
-{
-  "id": 22,
-  "title": "Sci-Fi Indigenous Echo Echo – 3D Model",
-  "description": "A custom 3D character reinterpretation of Echo Echo from Ben 10 with a sci-fi indigenous twist.",
-  "longDescription": "This project features a reimagined version of Echo Echo from the Ben 10 series, designed with a sci-fi indigenous theme. I created the model in Blender, focusing on stylized mechanical anatomy and cultural design elements. The character was fully rigged and brought to life with animations using Cinema 4D. The goal was to blend familiar cartoon aesthetics with a futuristic tribal look, suitable for games or cinematic sequences.",
-  "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/3D/Screenshot%20(41).png?raw=true",  
-  "tags": ["3D Modeling", "Blender", "Cinema 4D", "Character Design", "Animation", "Echo Echo", "Fan Art"],
-  "type": "3d",
-  "status": "completed",
-  "featured": false,
-  "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/refs/heads/main/public/3D/3D%20Modeling%20Cinema%204D.mp4"],
-  "features": [
-    "Stylized Sci-Fi/Indigenous Fusion Design",
-    "Inspired by Ben 10's Echo Echo",
-    "Suitable for Games or Animation"
-  ]
-}
-
-
+  }
 ]
