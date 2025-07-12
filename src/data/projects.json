@@ -37,7 +37,7 @@
       "id": 2,
       "title": "Dilmah - Legacy of the Leaf",
       "description": "Narrative-driven RPG that brings the story and values of Dilmah Tea to life.",
-      "longDescription": "A 3D third-person RPG/adventure PC title developed in Unreal Engine for Dilmah Ceylon Tea Company PLC, in collaboration with Nine Hermits Games. As a Junior Game Developer and Project Manager at this project, I contributed to crafting an immersive narrative experience that highlights Sri Lanka's tea culture, biodiversity, and Dilmah’s core values of kindness, authenticity, and sustainability. I co-developed the narrative-driven RPG adventure game, overseeing the entire development process as Project Manager. Set in a stylized yet realistic depiction of the Dunkeld Tea Estate, the gameplay blends exploration, character-driven storytelling, and quest-based progression. My responsibilities included designing and implementing nine interactive minigames (eight completed, one in development), and developing and designing the main menu, settings menu, quest system, and visual effects to support thematic storytelling. The project is currently unreleased and intended as a branded serious game for global audiences.",     
+      "longDescription": "A 3D third-person RPG/adventure PC title developed in Unreal Engine for Dilmah Ceylon Tea Company PLC, in collaboration with Nine Hermits Games. As a Junior Game Developer and Project Manager at this project, I contributed to crafting an immersive narrative experience that highlights Sri Lanka's tea culture, biodiversity, and Dilmah’s core values of kindness, authenticity, and sustainability. I co-developed the narrative-driven RPG adventure game, overseeing the entire development process as Project Manager. Set in a stylized yet realistic depiction of the Dunkeld Tea Estate, the gameplay blends exploration, character-driven storytelling, and quest-based progression. My responsibilities included designing and implementing nine interactive minigames (eight completed, one in development), and developing and designing the main menu, settings menu, quest system, full UI/UX design, and visual effects to support thematic storytelling. The project is currently unreleased and intended as a branded serious game for global audiences.",     
       "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
       "tags": ["Unreal Engine", "RPG", "3D Game", "Narrative", "PC Game", "Game Design", "Adventure"],
       "type": "game",
@@ -50,7 +50,8 @@
         "Authentic World Design",
         "Immersive Visuals & Effects",
         "Educational + Emotional Engagement",
-        "9 Interactive Mini games"
+        "9 Interactive Mini games",
+        "Custom UI/UX Design"
       ]
     },
 
