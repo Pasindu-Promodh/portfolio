@@ -241,8 +241,32 @@
     "demo": "https://maneeshag1.github.io/2048/",
     "media": ["https://github.com/Pasindu-Promodh/portfolio/raw/main/public/2048/Movie%20002.mp4"]
   },
+  {
+  "id": 15,
+  "title": "Color Bounce",
+  "description": "3D color-matching arcade game with dynamic speed progression.",
+  "longDescription": "Color Bounce is a 3D arcade game developed in Unity, where players control a bouncing ball as it descends through floating, colorful pillars in the sky. Each pillar appears with three randomized colors, and players must quickly tap the screen to switch the ball’s color to match the one it lands on. The game intensifies as the ball’s bounce speed increases over time, testing the player’s reflexes and color coordination in a vibrant environment.",
+  "image": "",  
+  "tags": ["Unity", "3D Game", "Arcade", "Color Matching", "Mobile Game", "Reflex Game"],
+  "type": "mobile",
+  "status": "completed",
+  "featured": false,
+  "media": [""]
+},
+{
+  "id": 16,
+  "title": "Tuk Tuk Raid",
+  "description": "High-speed 3D action game featuring explosive tuk tuk chases and shootouts.",
+  "longDescription": "Tuk Tuk Raid is a fast-paced 3D action arcade game developed in Unity. Players control a tuk tuk that is constantly firing at enemy mafia tuk tuks chasing from behind. The objective is to destroy as many enemy tuk tuks as possible to increase the score, while dodging incoming ones to avoid collisions. If the player’s tuk tuk crashes into an undestroyed enemy, the game ends. With escalating difficulty, the game delivers adrenaline-pumping gameplay through chaotic tuk tuk battles and reactive dodging mechanics.",
+  "image": "",
+  "tags": ["Unity", "3D Game", "Arcade", "Shooter", "Action", "Endless", "Vehicle Combat"],
+  "type": "mobile",
+  "status": "completed",
+  "featured": false,
+  "media": [""]
+},
     {
-    "id": 15,
+    "id": 17,
     "title": "Jigsaw Memes",
     "description": "Solve hilarious meme puzzles before time runs out!",
     "longDescription": "Jigsaw Memes is a 2D Unity puzzle game where your favorite internet memes are broken into pieces. Your goal? Complete each jigsaw puzzle before the timer hits zero. With a variety of meme-based puzzles that get trickier as you progress, this game blends classic jigsaw gameplay with meme humor for a fun and frantic experience. It’s a race against time—and laughter.",
@@ -255,7 +279,7 @@
     "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
   },
   {
-    "id": 16,
+    "id": 18,
     "title": "Find The Beast",
     "description": "A fast-paced meme-inspired 2D arcade game",
     "longDescription": "Find The Beast is a 2D hypercasual arcade game developed in Unity, inspired by viral internet memes of Mr. Beast and Mr. Lean. Players must quickly identify and tap on the real Mr. Beast as he moves among a swarm of identical-looking Mr. Lean faces. With each level, the game increases in speed and complexity—introducing more distractions and challenging the player's reflexes. Designed for quick, addictive gameplay and meme lovers, it's a perfect mix of humor and challenge.",
@@ -271,7 +295,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 19,
     "title": "Dictator Sprint",
     "description": "Fast-paced 2D runner where Aladeen shoots rivals on the track",
     "longDescription": "Inspired by the movie 'The Dictator', Dictator Sprint is a hilarious and chaotic 2D Unity game where you play as General Aladeen sprinting down an Olympic track. As other runners try to overtake you, take them down with pinpoint shots to maintain your lead. With simple controls, exaggerated animations, and over-the-top action, this satirical arcade game delivers fast-paced fun and political absurdity in equal measure.",
@@ -284,7 +308,7 @@
     "demo": "https://maneeshag1.github.io/Supreme-Sprint-Build/"
   },
   {
-    "id": 18,
+    "id": 20,
     "title": "Meme Infection",
     "description": "Tap to stop the zombie meme outbreak before it spreads!",
     "longDescription": "Meme Infection is a fast-paced 2D strategy game where a single infected meme becomes patient zero in a viral zombie outbreak. As the infection spreads across your favorite meme characters—moving up, down, left, or right—you must act quickly. Tap or click on zombies to eliminate them before they infect the entire board. It's a race against time: wipe out all the zombies before the memes are lost forever!",
@@ -297,7 +321,7 @@
     "demo": "https://maneeshag1.github.io/Meme-Infection-Build/"
   },
     {
-    "id": 19,
+    "id": 21,
     "title": "Hasbulla's Makeover",
     "description": "Give Hasbulla an instant makeover—perfectly time the mustache drop!",
     "longDescription": "Hasbulla's Makeover is a hilarious timing-based 2D Unity game where Hasbulla Magomedov’s iconic baby face awaits your touch of style. A cartoon mustache and wig swing left and right across his face, and it’s up to you to tap at the perfect moment. Land the accessories right where they belong to give Hasbulla an aged, gentlemanly look. Nail the alignment to score points, but miss—and it's a hilarious fail. Simple, absurd, and addictively fun.",
@@ -309,7 +333,7 @@
     "demo": "https://maneeshag1.github.io/Hasbullas-Makeover-Build/"
   },
   {
-    "id": 20,
+    "id": 22,
     "title": "Brain Rain",
     "description": "Brains are falling. catch them or be left brainless in this viral meme-inspired reflex game.",
     "longDescription": "Brain Rain is a fun and fast-paced 2D Unity game inspired by the viral 'hey you dropped this 🧠' meme. Players control a stick figure character who must move left and right to catch falling brains. Miss a brain, and it's game over. With increasing difficulty and speed, this hypercasual game tests your reflexes while delivering meme-fueled humor. Designed for short, engaging sessions, it’s perfect for mobile or web platforms.",
@@ -322,7 +346,7 @@
     "demo": "https://maneeshag1.github.io/Brain-Rain-Build/"
   },
   {
-    "id": 21,
+    "id": 23,
     "title": "Fire Empowering Effect and Flame Throw Attack",
     "description": "Realistic fire-based combat VFX showcasing power-up and attack phases.",
     "longDescription": "This was my first ever visual effects project, created in Unity using Visual Effect Graph. It features a fire empowerment charge-up followed by a realistic flamethrower-style attack. Designed to simulate an action ability or power-up sequence, the effect focuses on timing, direction, and intensity to create satisfying visual feedback for combat or ability use. This project marked my entry into real-time VFX and taught me the fundamentals of graph-based visual effect creation.",
@@ -336,7 +360,7 @@
     ]
   },
   {
-  "id": 22,
+  "id": 24,
   "title": "Sci-Fi Indigenous Echo Echo – 3D Model",
   "description": "A custom 3D character reinterpretation of Echo Echo from Ben 10 with a sci-fi indigenous twist.",
   "longDescription": "This project features a reimagined version of Echo Echo from the Ben 10 series, designed with a sci-fi indigenous theme. I created the model in Blender, focusing on stylized mechanical anatomy and cultural design elements. The character was fully rigged and brought to life with animations using Cinema 4D. The goal was to blend familiar cartoon aesthetics with a futuristic tribal look, suitable for games or cinematic sequences.",
