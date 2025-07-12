@@ -38,12 +38,20 @@
       "title": "Dilmah - Legacy of the Leaf",
       "description": "Narrative-driven RPG that brings the story and values of Dilmah Tea to life.",
       "longDescription": "A 3D third-person RPG/adventure PC title developed in Unreal Engine for Dilmah Ceylon Tea Company PLC, in collaboration with Nine Hermits Games. As a Junior Game Developer and Project Manager at this project, I contributed to crafting an immersive narrative experience that highlights Sri Lanka's tea culture, biodiversity, and Dilmah’s core values of kindness, authenticity, and sustainability. I co-developed the narrative-driven RPG adventure game, overseeing the entire development process as Project Manager. Set in a stylized yet realistic depiction of the Dunkeld Tea Estate, the gameplay blends exploration, character-driven storytelling, and quest-based progression. My responsibilities included designing and implementing nine interactive minigames (eight completed, one in development), and developing and designing the main menu, settings menu, quest system, full UI/UX design, and visual effects to support thematic storytelling. The project is currently unreleased and intended as a branded serious game for global audiences.",     
-      "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/Fluffy%20Flight/FF%20Banner.png",
+      "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/Screenshot%20(37).png?raw=true",
       "tags": ["Unreal Engine", "RPG", "3D Game", "Narrative", "PC Game", "Game Design", "Adventure"],
       "type": "game",
       "status": "in development",
       "featured": true,
-      "media": [""],
+      "media": [
+        "https://github.com/Pasindu-Promodh/portfolio/raw/refs/heads/main/public/Dilmah/Settings/Dilmah%20-%20Unreal%20Editor%202025-07-12%2019-28-19%20(online-video-cutter.com).mp4",
+        "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/Settings/Screenshot%20(39).png?raw=true",
+        "https://github.com/Pasindu-Promodh/portfolio/raw/refs/heads/main/public/Dilmah/Quest/Dilmah%20-%20Unreal%20Editor%202025-07-06%2020-59-03%20(online-video-cutter.com).mp4",
+        "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/Quest/Screenshot%202025-07-06%20211832.png?raw=true",
+        "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/Quest/Screenshot%202025-07-06%20212009.png?raw=true",
+        "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/Quest/Screenshot%202025-07-06%20212048.png?raw=true",
+        "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/Dilmah/Quest/Screenshot%202025-07-06%20212132.png?raw=true"
+      ],
       "features": [
         "Narrative-Driven RPG Adventure",
         "Interactive Learning: The Journey of Tea",
