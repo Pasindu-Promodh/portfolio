@@ -319,10 +319,13 @@
     "title": "Fire Empowering Effect and Flame Throw Attack",
     "description": "Realistic fire-based combat VFX showcasing power-up and attack phases.",
     "longDescription": "This was my first ever visual effects project, created in Unity using Visual Effect Graph. It features a fire empowerment charge-up followed by a realistic flamethrower-style attack. Designed to simulate an action ability or power-up sequence, the effect focuses on timing, direction, and intensity to create satisfying visual feedback for combat or ability use. This project marked my entry into real-time VFX and taught me the fundamentals of graph-based visual effect creation.",
-    "image": "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/VFX/Fire%20Empowering%20Effect%20And%20Flame%20Throw%20Attack.mp4",
+    "image": "https://github.com/Pasindu-Promodh/portfolio/blob/main/public/VFX/Screenshot%20(35).png?raw=true",
     "tags": ["Unity", "Visual Effects", "Visual Effect Graph", "Realistic", "Combat FX", "Fire"],
     "type": "vfx",
     "status": "completed",
-    "featured": true
+    "featured": true,
+    "media" : [
+      "https://github.com/Pasindu-Promodh/portfolio/raw/main/public/VFX/Fire%20Empowering%20Effect%20And%20Flame%20Throw%20Attack.mp4"
+    ]
   }
 ]
