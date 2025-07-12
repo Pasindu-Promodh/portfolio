@@ -15,6 +15,8 @@ import {
   Code,
   SportsEsports,
   PhoneIphone,
+  AutoAwesome, 
+  ViewInAr,
   Public,
   Star,
   Download,
@@ -75,6 +77,10 @@ const ProjectDetail: React.FC = () => {
         return <PhoneIphone sx={{ fontSize: "2rem" }} />;
       case "web":
         return <Public sx={{ fontSize: "2rem" }} />;
+      case "3d":
+        return <ViewInAr sx={{ fontSize: "2rem" }} />;
+      case "vfx":
+        return <AutoAwesome sx={{ fontSize: "2rem" }} />;
       default:
         return <Code sx={{ fontSize: "2rem" }} />;
     }
