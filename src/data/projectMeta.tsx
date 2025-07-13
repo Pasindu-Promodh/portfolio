@@ -26,12 +26,12 @@ const projectMeta = [
     icon: <PhoneIphone />,
     includeInTabs: true,
   },
-  // {
-  //   label: "Web Apps",
-  //   value: "web",
-  //   icon: <Public />,
-  //   includeInTabs: true,
-  // },
+  {
+    label: "Web Apps",
+    value: "web",
+    icon: <Public />,
+    includeInTabs: false,
+  },
   {
     label: "3D Models",
     value: "3d",
