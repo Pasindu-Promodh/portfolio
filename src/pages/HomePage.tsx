@@ -203,7 +203,7 @@ const Home: React.FC = () => {
             {/* Avatar */}
             <Grid size={{ xs: 12, md: 4 }}>
               {/* <Slide direction="left" in timeout={1200}> */}
-              <Slide direction="left" in timeout={1100}>
+              <Slide direction="left" in timeout={1200}>
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
                   <Avatar
                     src="https://media.licdn.com/dms/image/v2/D5603AQGvGYe0q9xbIQ/profile-displayphoto-shrink_800_800/B56ZOVIrHDGoAc-/0/1733373900788?e=1756944000&v=beta&t=ZPQn5y_TtJFhq7DgO89uQo4Ib8oh6O7tFCZFcP7ApkE"
