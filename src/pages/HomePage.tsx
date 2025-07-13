@@ -208,8 +208,8 @@ const Home: React.FC = () => {
                   <Avatar
                     src="https://media.licdn.com/dms/image/v2/D5603AQGvGYe0q9xbIQ/profile-displayphoto-shrink_800_800/B56ZOVIrHDGoAc-/0/1733373900788?e=1756944000&v=beta&t=ZPQn5y_TtJFhq7DgO89uQo4Ib8oh6O7tFCZFcP7ApkE"
                     sx={{
-                      width: 200,
-                      height: 200,
+                      width: 250,
+                      height: 250,
                       border: "4px solid rgba(255,255,255,0.3)",
                       boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
                       transition: "transform 0.3s ease-in-out",
