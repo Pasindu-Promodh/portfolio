@@ -283,7 +283,7 @@
   "title": "Pedro! Pedro! Pedro!",
   "description": "Meme-inspired 2D reflex game featuring the infamous Pedro the Raccoon.",
   "longDescription": "Pedro! Pedro! Pedro! is a 2D Unity game inspired by the viral Pedro the Raccoon meme. The player is shown a moving magnifying glass (created using an inverted mask effect), which scans across the screen at random speeds. Beneath it, Pedro the raccoon hides within a larger background layer. The player must click on Pedro the moment he’s visible through the magnifying glass before it moves away. With quick reflexes and precise timing, the challenge lies in spotting and clicking Pedro before he disappears again. It’s a light-hearted reflex test wrapped in meme-fueled chaos.",
-  "image": "https://github.com/ManeeshaG1/Pedro-Build/raw/refs/heads/main/thumbnail2.webp",
+  "image": "https://github.com/ManeeshaG1/Pedro-Build/raw/main/thumbnail2.webp",
   "tags": ["Unity", "2D Game", "Meme Game", "Reflex", "Casual", "Clicker", "Pedro the Raccoon"],
   "type": "game",
   "status": "completed",
