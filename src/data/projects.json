@@ -279,7 +279,21 @@
     "demo": "https://maneeshag1.github.io/Jigsaw-Memes-Build/"
   },
   {
-    "id": 18,
+  "id": 18,
+  "title": "Pedro! Pedro! Pedro!",
+  "description": "Meme-inspired 2D reflex game featuring the infamous Pedro the Raccoon.",
+  "longDescription": "Pedro! Pedro! Pedro! is a 2D Unity game inspired by the viral Pedro the Raccoon meme. The player is shown a moving magnifying glass (created using an inverted mask effect), which scans across the screen at random speeds. Beneath it, Pedro the raccoon hides within a larger background layer. The player must click on Pedro the moment he’s visible through the magnifying glass before it moves away. With quick reflexes and precise timing, the challenge lies in spotting and clicking Pedro before he disappears again. It’s a light-hearted reflex test wrapped in meme-fueled chaos.",
+  "image": "https://github.com/ManeeshaG1/Pedro-Build/raw/refs/heads/main/thumbnail2.webp",
+  "tags": ["Unity", "2D Game", "Meme Game", "Reflex", "Casual", "Clicker", "Pedro the Raccoon"],
+  "type": "game",
+  "status": "completed",
+  "featured": false,
+  "github": "https://github.com/ManeeshaG1/Pedro-Build",
+  "demo": "https://maneeshag1.github.io/Pedro-Build/"
+}
+
+  {
+    "id": 19,
     "title": "Find The Beast",
     "description": "A fast-paced meme-inspired 2D arcade game",
     "longDescription": "Find The Beast is a 2D hypercasual arcade game developed in Unity, inspired by viral internet memes of Mr. Beast and Mr. Lean. Players must quickly identify and tap on the real Mr. Beast as he moves among a swarm of identical-looking Mr. Lean faces. With each level, the game increases in speed and complexity—introducing more distractions and challenging the player's reflexes. Designed for quick, addictive gameplay and meme lovers, it's a perfect mix of humor and challenge.",
